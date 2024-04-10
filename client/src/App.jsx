@@ -11,6 +11,7 @@ import About from "./components/About";
 import Contact from "./components/Contact";
 import 'bootstrap/dist/css/bootstrap.min.css';
 import "bootstrap/dist/js/bootstrap.js"
+import HomePager from "./components/HomePager";
 
 function App() {
   return (
@@ -65,7 +66,8 @@ function App() {
       </nav>
       <main role="main" className="col-md-9 ml-sm-auto col-lg-10 px-md-4">
         <Routes>
-          <Route exact path="/" element={<Home />} />
+          {/* <Route exact path="/" element={<Home />} /> */}
+          <Route exact path="/" element={<HomePager />} />
           <Route path="/about" element={<About />} />
           <Route path="/contact" element={<Contact />} />
         </Routes>
