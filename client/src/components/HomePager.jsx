@@ -1,4 +1,5 @@
 import React, { useState, useEffect } from 'react';
+import imagePlaceHolder from '../assets/images/sock_placeholder.png';
 
 const HomePager = () => {
     const [data, setData] = useState([]); // State to store the fetched data
@@ -39,7 +40,7 @@ const HomePager = () => {
             <div className="card-container" style={{ display: 'flex', flexWrap: 'wrap', gap: '20px' }}>
                 {data.map((sock) => (
                     <div key={sock._id} className="card" style={{ flex: '1', minWidth: '300px', maxWidth: '45%' }}>
-                    <img className="card-img-top" src="#" alt="Sock Image" />
+                    <img className="card-img-top" src={imagePlaceHolder} alt="Sock Image" />
                     <div className="card-body">
                       <h5 className="card-title">Sock Details</h5>
                       <div className="card-text">Size: {sock.sockDetails.size}</div>
