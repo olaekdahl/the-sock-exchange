@@ -1,0 +1,852 @@
+[
+    {
+        "userId": "user10",
+        "sockDetails": {
+            "size": "Large",
+            "color": "White",
+            "pattern": "Polka dot",
+            "material": "Nylon",
+            "condition": "New",
+            "forFoot": "Both"
+        },
+        "additionalFeatures": {
+            "waterResistant": false,
+            "padded": false,
+            "antiBacterial": true
+        },
+        "addedTimestamp": "2024-01-27T10:00:00Z"
+    },
+    {
+        "userId": "user7",
+        "sockDetails": {
+            "size": "Large",
+            "color": "White",
+            "pattern": "Polka dot",
+            "material": "Nylon",
+            "condition": "New",
+            "forFoot": "Both"
+        },
+        "additionalFeatures": {
+            "waterResistant": false,
+            "padded": false,
+            "antiBacterial": true
+        },
+        "addedTimestamp": "2024-01-28T10:00:00Z"
+    },
+    {
+        "userId": "user8",
+        "sockDetails": {
+            "size": "Large",
+            "color": "White",
+            "pattern": "Polka dot",
+            "material": "Nylon",
+            "condition": "New",
+            "forFoot": "Both"
+        },
+        "additionalFeatures": {
+            "waterResistant": false,
+            "padded": false,
+            "antiBacterial": true
+        },
+        "addedTimestamp": "2024-01-29T10:00:00Z"
+    },
+    {
+        "userId": "user2",
+        "sockDetails": {
+            "size": "Large",
+            "color": "White",
+            "pattern": "Polka dot",
+            "material": "Nylon",
+            "condition": "New",
+            "forFoot": "Both"
+        },
+        "additionalFeatures": {
+            "waterResistant": false,
+            "padded": false,
+            "antiBacterial": true
+        },
+        "addedTimestamp": "2024-01-30T10:00:00Z"
+    },
+    {
+        "userId": "user2",
+        "sockDetails": {
+            "size": "Large",
+            "color": "White",
+            "pattern": "Polka dot",
+            "material": "Nylon",
+            "condition": "New",
+            "forFoot": "Both"
+        },
+        "additionalFeatures": {
+            "waterResistant": false,
+            "padded": false,
+            "antiBacterial": true
+        },
+        "addedTimestamp": "2024-01-31T10:00:00Z"
+    },
+    {
+        "userId": "user10",
+        "sockDetails": {
+            "size": "Large",
+            "color": "White",
+            "pattern": "Polka dot",
+            "material": "Nylon",
+            "condition": "New",
+            "forFoot": "Both"
+        },
+        "additionalFeatures": {
+            "waterResistant": false,
+            "padded": false,
+            "antiBacterial": true
+        },
+        "addedTimestamp": "2024-02-01T10:00:00Z"
+    },
+    {
+        "userId": "user8",
+        "sockDetails": {
+            "size": "Large",
+            "color": "White",
+            "pattern": "Polka dot",
+            "material": "Nylon",
+            "condition": "New",
+            "forFoot": "Both"
+        },
+        "additionalFeatures": {
+            "waterResistant": false,
+            "padded": false,
+            "antiBacterial": true
+        },
+        "addedTimestamp": "2024-02-02T10:00:00Z"
+    },
+    {
+        "userId": "user7",
+        "sockDetails": {
+            "size": "Large",
+            "color": "White",
+            "pattern": "Polka dot",
+            "material": "Nylon",
+            "condition": "New",
+            "forFoot": "Both"
+        },
+        "additionalFeatures": {
+            "waterResistant": false,
+            "padded": false,
+            "antiBacterial": true
+        },
+        "addedTimestamp": "2024-02-03T10:00:00Z"
+    },
+    {
+        "userId": "user10",
+        "sockDetails": {
+            "size": "Large",
+            "color": "White",
+            "pattern": "Polka dot",
+            "material": "Nylon",
+            "condition": "New",
+            "forFoot": "Both"
+        },
+        "additionalFeatures": {
+            "waterResistant": false,
+            "padded": false,
+            "antiBacterial": true
+        },
+        "addedTimestamp": "2024-02-04T10:00:00Z"
+    },
+    {
+        "userId": "user1",
+        "sockDetails": {
+            "size": "Large",
+            "color": "White",
+            "pattern": "Polka dot",
+            "material": "Nylon",
+            "condition": "New",
+            "forFoot": "Both"
+        },
+        "additionalFeatures": {
+            "waterResistant": false,
+            "padded": false,
+            "antiBacterial": true
+        },
+        "addedTimestamp": "2024-02-05T10:00:00Z"
+    },
+    {
+        "userId": "user8",
+        "sockDetails": {
+            "size": "Large",
+            "color": "White",
+            "pattern": "Polka dot",
+            "material": "Nylon",
+            "condition": "New",
+            "forFoot": "Both"
+        },
+        "additionalFeatures": {
+            "waterResistant": false,
+            "padded": false,
+            "antiBacterial": true
+        },
+        "addedTimestamp": "2024-02-06T10:00:00Z"
+    },
+    {
+        "userId": "user6",
+        "sockDetails": {
+            "size": "Large",
+            "color": "White",
+            "pattern": "Polka dot",
+            "material": "Nylon",
+            "condition": "New",
+            "forFoot": "Both"
+        },
+        "additionalFeatures": {
+            "waterResistant": false,
+            "padded": false,
+            "antiBacterial": true
+        },
+        "addedTimestamp": "2024-02-07T10:00:00Z"
+    },
+    {
+        "userId": "user5",
+        "sockDetails": {
+            "size": "Large",
+            "color": "White",
+            "pattern": "Polka dot",
+            "material": "Nylon",
+            "condition": "New",
+            "forFoot": "Both"
+        },
+        "additionalFeatures": {
+            "waterResistant": false,
+            "padded": false,
+            "antiBacterial": true
+        },
+        "addedTimestamp": "2024-02-08T10:00:00Z"
+    },
+    {
+        "userId": "user7",
+        "sockDetails": {
+            "size": "Large",
+            "color": "White",
+            "pattern": "Polka dot",
+            "material": "Nylon",
+            "condition": "New",
+            "forFoot": "Both"
+        },
+        "additionalFeatures": {
+            "waterResistant": false,
+            "padded": false,
+            "antiBacterial": true
+        },
+        "addedTimestamp": "2024-02-09T10:00:00Z"
+    },
+    {
+        "userId": "user5",
+        "sockDetails": {
+            "size": "Large",
+            "color": "White",
+            "pattern": "Polka dot",
+            "material": "Nylon",
+            "condition": "New",
+            "forFoot": "Both"
+        },
+        "additionalFeatures": {
+            "waterResistant": false,
+            "padded": false,
+            "antiBacterial": true
+        },
+        "addedTimestamp": "2024-02-10T10:00:00Z"
+    },
+    {
+        "userId": "user4",
+        "sockDetails": {
+            "size": "Large",
+            "color": "White",
+            "pattern": "Polka dot",
+            "material": "Nylon",
+            "condition": "New",
+            "forFoot": "Both"
+        },
+        "additionalFeatures": {
+            "waterResistant": false,
+            "padded": false,
+            "antiBacterial": true
+        },
+        "addedTimestamp": "2024-02-11T10:00:00Z"
+    },
+    {
+        "userId": "user1",
+        "sockDetails": {
+            "size": "Large",
+            "color": "White",
+            "pattern": "Polka dot",
+            "material": "Nylon",
+            "condition": "New",
+            "forFoot": "Both"
+        },
+        "additionalFeatures": {
+            "waterResistant": false,
+            "padded": false,
+            "antiBacterial": true
+        },
+        "addedTimestamp": "2024-02-12T10:00:00Z"
+    },
+    {
+        "userId": "user1",
+        "sockDetails": {
+            "size": "Large",
+            "color": "White",
+            "pattern": "Polka dot",
+            "material": "Nylon",
+            "condition": "New",
+            "forFoot": "Both"
+        },
+        "additionalFeatures": {
+            "waterResistant": false,
+            "padded": false,
+            "antiBacterial": true
+        },
+        "addedTimestamp": "2024-02-13T10:00:00Z"
+    },
+    {
+        "userId": "user1",
+        "sockDetails": {
+            "size": "Large",
+            "color": "White",
+            "pattern": "Polka dot",
+            "material": "Nylon",
+            "condition": "New",
+            "forFoot": "Both"
+        },
+        "additionalFeatures": {
+            "waterResistant": false,
+            "padded": false,
+            "antiBacterial": true
+        },
+        "addedTimestamp": "2024-02-14T10:00:00Z"
+    },
+    {
+        "userId": "user8",
+        "sockDetails": {
+            "size": "Large",
+            "color": "White",
+            "pattern": "Polka dot",
+            "material": "Nylon",
+            "condition": "New",
+            "forFoot": "Both"
+        },
+        "additionalFeatures": {
+            "waterResistant": false,
+            "padded": false,
+            "antiBacterial": true
+        },
+        "addedTimestamp": "2024-02-15T10:00:00Z"
+    },
+    {
+        "userId": "user8",
+        "sockDetails": {
+            "size": "Large",
+            "color": "White",
+            "pattern": "Polka dot",
+            "material": "Nylon",
+            "condition": "New",
+            "forFoot": "Both"
+        },
+        "additionalFeatures": {
+            "waterResistant": false,
+            "padded": false,
+            "antiBacterial": true
+        },
+        "addedTimestamp": "2024-02-16T10:00:00Z"
+    },
+    {
+        "userId": "user10",
+        "sockDetails": {
+            "size": "Large",
+            "color": "White",
+            "pattern": "Polka dot",
+            "material": "Nylon",
+            "condition": "New",
+            "forFoot": "Both"
+        },
+        "additionalFeatures": {
+            "waterResistant": false,
+            "padded": false,
+            "antiBacterial": true
+        },
+        "addedTimestamp": "2024-02-17T10:00:00Z"
+    },
+    {
+        "userId": "user3",
+        "sockDetails": {
+            "size": "Large",
+            "color": "White",
+            "pattern": "Polka dot",
+            "material": "Nylon",
+            "condition": "New",
+            "forFoot": "Both"
+        },
+        "additionalFeatures": {
+            "waterResistant": false,
+            "padded": false,
+            "antiBacterial": true
+        },
+        "addedTimestamp": "2024-02-18T10:00:00Z"
+    },
+    {
+        "userId": "user4",
+        "sockDetails": {
+            "size": "Large",
+            "color": "White",
+            "pattern": "Polka dot",
+            "material": "Nylon",
+            "condition": "New",
+            "forFoot": "Both"
+        },
+        "additionalFeatures": {
+            "waterResistant": false,
+            "padded": false,
+            "antiBacterial": true
+        },
+        "addedTimestamp": "2024-02-19T10:00:00Z"
+    },
+    {
+        "userId": "user2",
+        "sockDetails": {
+            "size": "Large",
+            "color": "White",
+            "pattern": "Polka dot",
+            "material": "Nylon",
+            "condition": "New",
+            "forFoot": "Both"
+        },
+        "additionalFeatures": {
+            "waterResistant": false,
+            "padded": false,
+            "antiBacterial": true
+        },
+        "addedTimestamp": "2024-02-20T10:00:00Z"
+    },
+    {
+        "userId": "user1",
+        "sockDetails": {
+            "size": "Large",
+            "color": "White",
+            "pattern": "Polka dot",
+            "material": "Nylon",
+            "condition": "New",
+            "forFoot": "Both"
+        },
+        "additionalFeatures": {
+            "waterResistant": false,
+            "padded": false,
+            "antiBacterial": true
+        },
+        "addedTimestamp": "2024-02-21T10:00:00Z"
+    },
+    {
+        "userId": "user6",
+        "sockDetails": {
+            "size": "Large",
+            "color": "White",
+            "pattern": "Polka dot",
+            "material": "Nylon",
+            "condition": "New",
+            "forFoot": "Both"
+        },
+        "additionalFeatures": {
+            "waterResistant": false,
+            "padded": false,
+            "antiBacterial": true
+        },
+        "addedTimestamp": "2024-02-22T10:00:00Z"
+    },
+    {
+        "userId": "user8",
+        "sockDetails": {
+            "size": "Large",
+            "color": "White",
+            "pattern": "Polka dot",
+            "material": "Nylon",
+            "condition": "New",
+            "forFoot": "Both"
+        },
+        "additionalFeatures": {
+            "waterResistant": false,
+            "padded": false,
+            "antiBacterial": true
+        },
+        "addedTimestamp": "2024-02-23T10:00:00Z"
+    },
+    {
+        "userId": "user3",
+        "sockDetails": {
+            "size": "Large",
+            "color": "White",
+            "pattern": "Polka dot",
+            "material": "Nylon",
+            "condition": "New",
+            "forFoot": "Both"
+        },
+        "additionalFeatures": {
+            "waterResistant": false,
+            "padded": false,
+            "antiBacterial": true
+        },
+        "addedTimestamp": "2024-02-24T10:00:00Z"
+    },
+    {
+        "userId": "user3",
+        "sockDetails": {
+            "size": "Large",
+            "color": "White",
+            "pattern": "Polka dot",
+            "material": "Nylon",
+            "condition": "New",
+            "forFoot": "Both"
+        },
+        "additionalFeatures": {
+            "waterResistant": false,
+            "padded": false,
+            "antiBacterial": true
+        },
+        "addedTimestamp": "2024-02-25T10:00:00Z"
+    },
+    {
+        "userId": "user5",
+        "sockDetails": {
+            "size": "Large",
+            "color": "White",
+            "pattern": "Polka dot",
+            "material": "Nylon",
+            "condition": "New",
+            "forFoot": "Both"
+        },
+        "additionalFeatures": {
+            "waterResistant": false,
+            "padded": false,
+            "antiBacterial": true
+        },
+        "addedTimestamp": "2024-02-26T10:00:00Z"
+    },
+    {
+        "userId": "user6",
+        "sockDetails": {
+            "size": "Large",
+            "color": "White",
+            "pattern": "Polka dot",
+            "material": "Nylon",
+            "condition": "New",
+            "forFoot": "Both"
+        },
+        "additionalFeatures": {
+            "waterResistant": false,
+            "padded": false,
+            "antiBacterial": true
+        },
+        "addedTimestamp": "2024-02-27T10:00:00Z"
+    },
+    {
+        "userId": "user7",
+        "sockDetails": {
+            "size": "Large",
+            "color": "White",
+            "pattern": "Polka dot",
+            "material": "Nylon",
+            "condition": "New",
+            "forFoot": "Both"
+        },
+        "additionalFeatures": {
+            "waterResistant": false,
+            "padded": false,
+            "antiBacterial": true
+        },
+        "addedTimestamp": "2024-02-28T10:00:00Z"
+    },
+    {
+        "userId": "user3",
+        "sockDetails": {
+            "size": "Large",
+            "color": "White",
+            "pattern": "Polka dot",
+            "material": "Nylon",
+            "condition": "New",
+            "forFoot": "Both"
+        },
+        "additionalFeatures": {
+            "waterResistant": false,
+            "padded": false,
+            "antiBacterial": true
+        },
+        "addedTimestamp": "2024-02-29T10:00:00Z"
+    },
+    {
+        "userId": "user3",
+        "sockDetails": {
+            "size": "Large",
+            "color": "White",
+            "pattern": "Polka dot",
+            "material": "Nylon",
+            "condition": "New",
+            "forFoot": "Both"
+        },
+        "additionalFeatures": {
+            "waterResistant": false,
+            "padded": false,
+            "antiBacterial": true
+        },
+        "addedTimestamp": "2024-03-01T10:00:00Z"
+    },
+    {
+        "userId": "user4",
+        "sockDetails": {
+            "size": "Large",
+            "color": "White",
+            "pattern": "Polka dot",
+            "material": "Nylon",
+            "condition": "New",
+            "forFoot": "Both"
+        },
+        "additionalFeatures": {
+            "waterResistant": false,
+            "padded": false,
+            "antiBacterial": true
+        },
+        "addedTimestamp": "2024-03-02T10:00:00Z"
+    },
+    {
+        "userId": "user3",
+        "sockDetails": {
+            "size": "Large",
+            "color": "White",
+            "pattern": "Polka dot",
+            "material": "Nylon",
+            "condition": "New",
+            "forFoot": "Both"
+        },
+        "additionalFeatures": {
+            "waterResistant": false,
+            "padded": false,
+            "antiBacterial": true
+        },
+        "addedTimestamp": "2024-03-03T10:00:00Z"
+    },
+    {
+        "userId": "user9",
+        "sockDetails": {
+            "size": "Large",
+            "color": "White",
+            "pattern": "Polka dot",
+            "material": "Nylon",
+            "condition": "New",
+            "forFoot": "Both"
+        },
+        "additionalFeatures": {
+            "waterResistant": false,
+            "padded": false,
+            "antiBacterial": true
+        },
+        "addedTimestamp": "2024-03-04T10:00:00Z"
+    },
+    {
+        "userId": "user5",
+        "sockDetails": {
+            "size": "Large",
+            "color": "White",
+            "pattern": "Polka dot",
+            "material": "Nylon",
+            "condition": "New",
+            "forFoot": "Both"
+        },
+        "additionalFeatures": {
+            "waterResistant": false,
+            "padded": false,
+            "antiBacterial": true
+        },
+        "addedTimestamp": "2024-03-05T10:00:00Z"
+    },
+    {
+        "userId": "user2",
+        "sockDetails": {
+            "size": "Large",
+            "color": "White",
+            "pattern": "Polka dot",
+            "material": "Nylon",
+            "condition": "New",
+            "forFoot": "Both"
+        },
+        "additionalFeatures": {
+            "waterResistant": false,
+            "padded": false,
+            "antiBacterial": true
+        },
+        "addedTimestamp": "2024-03-06T10:00:00Z"
+    },
+    {
+        "userId": "user9",
+        "sockDetails": {
+            "size": "Large",
+            "color": "White",
+            "pattern": "Polka dot",
+            "material": "Nylon",
+            "condition": "New",
+            "forFoot": "Both"
+        },
+        "additionalFeatures": {
+            "waterResistant": false,
+            "padded": false,
+            "antiBacterial": true
+        },
+        "addedTimestamp": "2024-03-07T10:00:00Z"
+    },
+    {
+        "userId": "user2",
+        "sockDetails": {
+            "size": "Large",
+            "color": "White",
+            "pattern": "Polka dot",
+            "material": "Nylon",
+            "condition": "New",
+            "forFoot": "Both"
+        },
+        "additionalFeatures": {
+            "waterResistant": false,
+            "padded": false,
+            "antiBacterial": true
+        },
+        "addedTimestamp": "2024-03-08T10:00:00Z"
+    },
+    {
+        "userId": "user4",
+        "sockDetails": {
+            "size": "Large",
+            "color": "White",
+            "pattern": "Polka dot",
+            "material": "Nylon",
+            "condition": "New",
+            "forFoot": "Both"
+        },
+        "additionalFeatures": {
+            "waterResistant": false,
+            "padded": false,
+            "antiBacterial": true
+        },
+        "addedTimestamp": "2024-03-09T10:00:00Z"
+    },
+    {
+        "userId": "user2",
+        "sockDetails": {
+            "size": "Large",
+            "color": "White",
+            "pattern": "Polka dot",
+            "material": "Nylon",
+            "condition": "New",
+            "forFoot": "Both"
+        },
+        "additionalFeatures": {
+            "waterResistant": false,
+            "padded": false,
+            "antiBacterial": true
+        },
+        "addedTimestamp": "2024-03-10T10:00:00Z"
+    },
+    {
+        "userId": "user6",
+        "sockDetails": {
+            "size": "Large",
+            "color": "White",
+            "pattern": "Polka dot",
+            "material": "Nylon",
+            "condition": "New",
+            "forFoot": "Both"
+        },
+        "additionalFeatures": {
+            "waterResistant": false,
+            "padded": false,
+            "antiBacterial": true
+        },
+        "addedTimestamp": "2024-03-11T10:00:00Z"
+    },
+    {
+        "userId": "user9",
+        "sockDetails": {
+            "size": "Large",
+            "color": "White",
+            "pattern": "Polka dot",
+            "material": "Nylon",
+            "condition": "New",
+            "forFoot": "Both"
+        },
+        "additionalFeatures": {
+            "waterResistant": false,
+            "padded": false,
+            "antiBacterial": true
+        },
+        "addedTimestamp": "2024-03-12T10:00:00Z"
+    },
+    {
+        "userId": "user10",
+        "sockDetails": {
+            "size": "Large",
+            "color": "White",
+            "pattern": "Polka dot",
+            "material": "Nylon",
+            "condition": "New",
+            "forFoot": "Both"
+        },
+        "additionalFeatures": {
+            "waterResistant": false,
+            "padded": false,
+            "antiBacterial": true
+        },
+        "addedTimestamp": "2024-03-13T10:00:00Z"
+    },
+    {
+        "userId": "user8",
+        "sockDetails": {
+            "size": "Large",
+            "color": "White",
+            "pattern": "Polka dot",
+            "material": "Nylon",
+            "condition": "New",
+            "forFoot": "Both"
+        },
+        "additionalFeatures": {
+            "waterResistant": false,
+            "padded": false,
+            "antiBacterial": true
+        },
+        "addedTimestamp": "2024-03-14T10:00:00Z"
+    },
+    {
+        "userId": "user1",
+        "sockDetails": {
+            "size": "Large",
+            "color": "White",
+            "pattern": "Polka dot",
+            "material": "Nylon",
+            "condition": "New",
+            "forFoot": "Both"
+        },
+        "additionalFeatures": {
+            "waterResistant": false,
+            "padded": false,
+            "antiBacterial": true
+        },
+        "addedTimestamp": "2024-03-15T10:00:00Z"
+    },
+    {
+        "userId": "user1",
+        "sockDetails": {
+            "size": "Large",
+            "color": "White",
+            "pattern": "Polka dot",
+            "material": "Nylon",
+            "condition": "New",
+            "forFoot": "Both"
+        },
+        "additionalFeatures": {
+            "waterResistant": false,
+            "padded": false,
+            "antiBacterial": true
+        },
+        "addedTimestamp": "2024-03-16T10:00:00Z"
+    }
+]
