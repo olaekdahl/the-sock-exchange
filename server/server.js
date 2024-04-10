@@ -51,6 +51,29 @@ app.get('/api/socks/:page/:limit', async (req, res) => {
     }
 });
 
+// Example using curl:
+// curl -X POST -H "Content-Type: application/json" -d '{"color": "blue"}' http://localhost:3000/api/socks/search
+app.post('/api/socks/search', async (req, res) => {
+    try {
+        const { color } = req.body;
+        console.log(color);
+        const client = await MongoClient.connect(url);
+        const db = client.db(dbName);
+        const collection = db.collection(collectionName);
+        const regex = new RegExp(color, 'i'); // Create a case-insensitive regular expression
+        /**
+         * Searches for socks in the collection based on color.
+         * @param {string} color - The color of the socks to search for.
+         * @returns {Promise<Array>} A promise that resolves to an array of socks.
+         */
+        const socks = await collection.find({ 'sockDetails.color': regex }).toArray();
+        res.json(socks);
+    } catch (err) {
+        console.error('Error:', err);
+        res.status(500).send('Hmm, something doesn\'t smell right... Error searching for socks');
+    }
+});
+
 app.listen(3000, () => {
     console.log('Server is running on port 3000');
 });
