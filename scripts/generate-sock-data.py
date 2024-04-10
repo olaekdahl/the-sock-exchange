@@ -1,6 +1,7 @@
 from datetime import datetime, timedelta
 import random
 import json
+import copy
 
 # Template for MongoDB document
 doc_template = {
@@ -37,7 +38,7 @@ start_date = datetime(2024, 1, 26, 10, 0, 0)
 # Generate 50 documents
 documents = []
 for i in range(50):
-    new_doc = doc_template.copy()
+    new_doc = copy.deepcopy(doc_template)
     
     new_doc["userId"] = random.choice(userId)
 
@@ -54,8 +55,9 @@ for i in range(50):
     
     # Increment timestamp by 1 day for each document
     new_doc["addedTimestamp"] = (start_date + timedelta(days=i + 1)).isoformat() + "Z"
-    
+
     documents.append(new_doc)
+    new_doc = None
 
 # Define the file path where the JSON file will be saved
 file_path = 'sock-data.json'
