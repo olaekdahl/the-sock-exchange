@@ -95,7 +95,8 @@ app.post('/api/socks/search', async (req, res) => {
 // }' http://localhost:3000/api/socks
 app.post('/api/socks', async (req, res) => {
     try {
-        const { sock } = req.body;
+        const sock  = req.body;
+        console.log(sock);
         const client = await MongoClient.connect(url);
         const db = client.db(dbName);
         const collection = db.collection(collectionName);
@@ -104,8 +105,8 @@ app.post('/api/socks', async (req, res) => {
          * @param {object} sock - The sock object to be added.
          * @returns {Promise} A promise that resolves when the sock is added successfully.
          */
-        await collection.insertOne(sock);
-        res.status(201).send('Sock added successfully');
+        const result = await collection.insertOne(sock);
+        res.status(201).send(`{"_id":"${result.insertedId}"}`);
     } catch (err) {
         console.error('Error:', err);
         res.status(500).send('Hmm, something doesn\'t smell right... Error adding sock');
