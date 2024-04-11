@@ -8,7 +8,7 @@ import {
 } from "react-router-dom";
 import Home from "./components/Home";
 import About from "./components/About";
-import Contact from "./components/Contact";
+import Upload from "./components/Upload";
 import 'bootstrap/dist/css/bootstrap.min.css';
 import "bootstrap/dist/js/bootstrap.js"
 import HomePager from "./components/HomePager";
@@ -46,13 +46,13 @@ function App() {
                 </Link>
               </li>
               <li className="nav-item">
-                <Link className="nav-link" to="/about">
-                  About
+                <Link className="nav-link" to="/contact">
+                  Upload
                 </Link>
               </li>
               <li className="nav-item">
-                <Link className="nav-link" to="/contact">
-                  Contact
+                <Link className="nav-link" to="/about">
+                  About
                 </Link>
               </li>
             </ul>
@@ -65,7 +65,7 @@ function App() {
           {/* <Route exact path="/" element={<Home />} /> */}
           <Route exact path="/" element={<HomePager onHandleSetData={handleSetData} data={data} />} />
           <Route path="/about" element={<About />} />
-          <Route path="/contact" element={<Contact />} />
+          <Route path="/contact" element={<Upload />} />
         </Routes>
         <div className="container-fluid">
           <div className="row"></div>

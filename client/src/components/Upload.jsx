@@ -1,6 +1,6 @@
 import React, { useState } from 'react';
 
-const Contact = () => {
+const Upload = () => {
   const [count, setCount] = useState(0);
 
   const incrementCount = () => {
@@ -16,4 +16,4 @@ const Contact = () => {
   );
 };
 
-export default Contact;
+export default Upload;
