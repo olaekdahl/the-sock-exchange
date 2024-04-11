@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useState } from "react";
 import {
   BrowserRouter as Router,
   Route,
@@ -12,8 +12,14 @@ import Contact from "./components/Contact";
 import 'bootstrap/dist/css/bootstrap.min.css';
 import "bootstrap/dist/js/bootstrap.js"
 import HomePager from "./components/HomePager";
+import Search from "./components/Search";
 
 function App() {
+  const [data, setData] = useState([]); // Shared state to store the fetched data
+  const handleSetData = (data) => {
+    setData(data);
+  };
+
   return (
     <Router>
       <nav className="navbar navbar-expand-lg bg-body-tertiary">
@@ -50,24 +56,14 @@ function App() {
                 </Link>
               </li>
             </ul>
-            <form className="d-flex" role="search">
-              <input
-                className="form-control me-2"
-                type="search"
-                placeholder="Search"
-                aria-label="Search"
-              />
-              <button className="btn btn-outline-success" type="submit">
-                Search
-              </button>
-            </form>
+            <Search onHandleSetData={handleSetData} />
           </div>
         </div>
       </nav>
       <main role="main" className="col-md-9 ml-sm-auto col-lg-10 px-md-4">
         <Routes>
           {/* <Route exact path="/" element={<Home />} /> */}
-          <Route exact path="/" element={<HomePager />} />
+          <Route exact path="/" element={<HomePager onHandleSetData={handleSetData} data={data} />} />
           <Route path="/about" element={<About />} />
           <Route path="/contact" element={<Contact />} />
         </Routes>

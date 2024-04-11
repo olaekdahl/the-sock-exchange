@@ -1,19 +1,36 @@
+/**
+ * Renders a component that displays a list of socks fetched from an API.
+ *
+ * @component
+ * @example
+ * // Usage
+ * <HomePager />
+ */
+
 import React, { useState, useEffect } from 'react';
 import imagePlaceHolder from '../assets/images/sock_placeholder.png';
 
-const HomePager = () => {
-    const [data, setData] = useState([]); // State to store the fetched data
+const HomePager = ({onHandleSetData, data}) => {
     const [page, setPage] = useState(1); // State to store the current page number
 
     useEffect(() => {
         const fetchData = async () => {
             try {
+                /**
+                 * Fetches data from the SOCKS_API_URL.
+                 *
+                 * @typedef {Object} Response
+                 * @property {string} status - The status of the response.
+                 * @property {number} statusCode - The status code of the response.
+                 * @property {string} message - The message from the response.
+                 * @property {Object} data - The data returned from the response.
+                 */
                 const response = await fetch(`${import.meta.env.VITE_SOCKS_API_URL}/${page}/10`); // Fetch data from the SOCKS_API_URL
                 if (!response.ok) {
                     throw new Error('Data could not be fetched!'); // Throw an error if the response is not ok
                 }
                 const data = await response.json(); // Parse the response as JSON
-                setData(data); // Update the state with the fetched data
+                onHandleSetData(data); // Update the state with the fetched data
             } catch (error) {
                 console.error('Error fetching socks:', error); // Log any errors that occur during fetching
             }

@@ -52,15 +52,14 @@ app.get('/api/socks/:page/:limit', async (req, res) => {
 });
 
 // Example using curl:
-// curl -X POST -H "Content-Type: application/json" -d '{"color": "blue"}' http://localhost:3000/api/socks/search
+// curl -X POST -H "Content-Type: application/json" -d '{"searchTerm": "blue"}' http://localhost:3000/api/socks/search
 app.post('/api/socks/search', async (req, res) => {
     try {
-        const { color } = req.body;
-        console.log(color);
+        const { searchTerm } = req.body;
         const client = await MongoClient.connect(url);
         const db = client.db(dbName);
         const collection = db.collection(collectionName);
-        const regex = new RegExp(color, 'i'); // Create a case-insensitive regular expression
+        const regex = new RegExp(searchTerm, 'i'); // Create a case-insensitive regular expression
         /**
          * Searches for socks in the collection based on color.
          * @param {string} color - The color of the socks to search for.

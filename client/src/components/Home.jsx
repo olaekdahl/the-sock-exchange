@@ -1,9 +1,16 @@
 import React, { useState, useEffect } from 'react';
 
+/**
+ * Home component displays a list of socks fetched from the SOCKS_API_URL.
+ */
 const Home = () => {
   const [data, setData] = useState([]); // State to store the fetched data
 
   useEffect(() => {
+    /**
+     * Fetches data from the SOCKS_API_URL and updates the state with the fetched data.
+     * @throws {Error} If the response is not ok.
+     */
     const fetchData = async () => {
       try {
         console.log(import.meta.env.VITE_SOCKS_API_URL)
