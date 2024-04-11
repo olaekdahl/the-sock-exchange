@@ -73,6 +73,45 @@ app.post('/api/socks/search', async (req, res) => {
     }
 });
 
+// Example using curl:
+// curl -X POST -H "Content-Type: application/json" -d '{
+//   "sock": {
+//     "userId": "user8",
+//     "sockDetails": {
+//       "size": "Medium",
+//       "color": "Pineapple Yellow",
+//       "pattern": "Solid",
+//       "material": "Cotton",
+//       "condition": "New",
+//       "forFoot": "Both"
+//     },
+//     "additionalFeatures": {
+//       "waterResistant": true,
+//       "padded": false,
+//       "antiBacterial": true
+//     },
+//     "addedTimestamp": "2024-02-19T10:00:00Z"
+//   }
+// }' http://localhost:3000/api/socks
+app.post('/api/socks', async (req, res) => {
+    try {
+        const { sock } = req.body;
+        const client = await MongoClient.connect(url);
+        const db = client.db(dbName);
+        const collection = db.collection(collectionName);
+        /**
+         * Adds a new sock document to the collection.
+         * @param {object} sock - The sock object to be added.
+         * @returns {Promise} A promise that resolves when the sock is added successfully.
+         */
+        await collection.insertOne(sock);
+        res.status(201).send('Sock added successfully');
+    } catch (err) {
+        console.error('Error:', err);
+        res.status(500).send('Hmm, something doesn\'t smell right... Error adding sock');
+    }
+});
+
 app.listen(3000, () => {
     console.log('Server is running on port 3000');
 });
