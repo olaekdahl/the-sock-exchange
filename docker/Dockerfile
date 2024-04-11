@@ -35,9 +35,9 @@ EXPOSE 3000
 EXPOSE 27017
 
 # Node environment variables
-ENV MONGO_DB_URL=mongodb://localhost:27017
-ENV MONGO_DB=tse
-ENV MONGO_DB_COLLECTION=socks
+ENV MONGO_DB_URL="mongodb://localhost:27017"
+ENV MONGO_DB="tse"
+ENV MONGO_DB_COLLECTION="socks"
 
 # Start MongoDB and Node app
 CMD mongod --fork --logpath /var/log/mongodb.log --dbpath /data/db --bind_ip 127.0.0.1 && ./import-data-mongodb.sh && \
