@@ -1,13 +1,14 @@
 # Use the official Node.js image as the base image
-FROM node:14
+FROM node
 
 # Install MongoDB
 RUN apt-get update && apt-get install -y gnupg && \
-    wget -qO - https://www.mongodb.org/static/pgp/server-4.4.asc | apt-key add - && \
-    echo "deb http://repo.mongodb.org/apt/debian buster/mongodb-org/4.4 main" | tee /etc/apt/sources.list.d/mongodb-org-4.4.list && \
-    apt-get update && apt-get install -y mongodb-org \
-    apt-get clean && \
-    rm -rf /var/lib/apt/lists/*
+    wget -qO - https://www.mongodb.org/static/pgp/server-7.0.asc | gpg -o /usr/share/keyrings/mongodb-server-7.0.gpg --dearmor && \
+    echo "deb [ signed-by=/usr/share/keyrings/mongodb-server-7.0.gpg ] http://repo.mongodb.org/apt/debian bookworm/mongodb-org/7.0 main" | tee /etc/apt/sources.list.d/mongodb-org-7.0.list && \
+    apt-get update && apt-get install -y mongodb-org
+
+# Delete cached packages 
+RUN apt-get clean && rm -rf /var/lib/apt/lists/*
 
 # Create a MongoDB data directory
 RUN mkdir -p /data/db
@@ -24,8 +25,8 @@ RUN npm install
 
 # Copy the JSON data file and init script into the container
 COPY sock-data.json .
-COPY init-data.sh .
-RUN chmod +x ./init-data.sh
+COPY import-data-mongodb.sh .
+RUN chmod +x ./import-data-mongodb.sh
 
 # Expose the port the app runs on
 EXPOSE 3000
@@ -39,5 +40,5 @@ ENV MONGO_DB=tse
 ENV MONGO_DB_COLLECTION=socks
 
 # Start MongoDB and Node app
-CMD mongod --fork --logpath /var/log/mongodb.log --dbpath /data/db --bind_ip 127.0.0.1 && ./init-data.sh && \
+CMD mongod --fork --logpath /var/log/mongodb.log --dbpath /data/db --bind_ip 127.0.0.1 && ./import-data-mongodb.sh && \
     node server.js
