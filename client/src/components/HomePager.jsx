@@ -47,6 +47,23 @@ const HomePager = ({onHandleSetData, data}) => {
         setPage(page - 1); // Decrement the page state by 1
     };
 
+    const handleDelete = async (sockId) => {
+        try {
+            // Make an API request to delete the sock with the given sockId
+            const response = await fetch(`${import.meta.env.VITE_SOCKS_API_URL}/${sockId}`, {
+                method: 'DELETE',
+            });
+            if (!response.ok) {
+                throw new Error('Sock could not be deleted!');
+            }
+            // Update the state or fetch the updated data from the server
+            const updatedData = data.filter(sock => sock._id !== sockId); // Remove the deleted sock from the data array
+            onHandleSetData(updatedData); // Update the state with the updated data
+        } catch (error) {
+            console.error('Error deleting sock:', error);
+        }
+    };
+
     return (
         <div>
             <h1>The Sock Exchange</h1>
@@ -57,26 +74,27 @@ const HomePager = ({onHandleSetData, data}) => {
             <div className="card-container" style={{ display: 'flex', flexWrap: 'wrap', gap: '20px' }}>
                 {data.map((sock) => (
                     <div key={sock._id} className="card" style={{ flex: '1', minWidth: '300px', maxWidth: '45%' }}>
-                    <img className="card-img-top" src={imagePlaceHolder} alt="Sock Image" />
-                    <div className="card-body">
-                      <h5 className="card-title">Sock Details</h5>
-                      <div className="card-text">Size: {sock.sockDetails.size}</div>
-                      <div className="card-text">Color: {sock.sockDetails.color}</div>
-                      <div className="card-text">Pattern: {sock.sockDetails.pattern}</div>
-                      <div className="card-text">Material: {sock.sockDetails.material}</div>
-                      <div className="card-text">Condition: {sock.sockDetails.condition}</div>
-                      <div className="card-text">For Foot: {sock.sockDetails.forFoot}</div>
+                        <img className="card-img-top" src={imagePlaceHolder} alt="Sock" />
+                        <div className="card-body">
+                            <h5 className="card-title">Sock Details</h5>
+                            <div className="card-text">Size: {sock.sockDetails.size}</div>
+                            <div className="card-text">Color: {sock.sockDetails.color}</div>
+                            <div className="card-text">Pattern: {sock.sockDetails.pattern}</div>
+                            <div className="card-text">Material: {sock.sockDetails.material}</div>
+                            <div className="card-text">Condition: {sock.sockDetails.condition}</div>
+                            <div className="card-text">For Foot: {sock.sockDetails.forFoot}</div>
+                        </div>
+                        <div className="card-body">
+                            <h5 className="card-title">Additional Features</h5>
+                            <div className="card-text">Water Resistant: {sock.additionalFeatures.waterResistant ? 'Yes' : 'No'}</div>
+                            <div className="card-text">Padded: {sock.additionalFeatures.padded ? 'Yes' : 'No'}</div>
+                            <div className="card-text">Anti Bacterial: {sock.additionalFeatures.antiBacterial ? 'Yes' : 'No'}</div>
+                        </div>
+                        <div className="card-footer">
+                            <small className="text-muted">Added: {sock.addedTimestamp}</small>
+                            <button className="btn btn-sm btn-danger" onClick={() => handleDelete(sock._id)} style={{ marginLeft: '40px' }}>Delete</button>
+                        </div>
                     </div>
-                    <div className="card-body">
-                      <h5 className="card-title">Additional Features</h5>
-                      <div className="card-text">Water Resistant: {sock.additionalFeatures.waterResistant ? 'Yes' : 'No'}</div>
-                      <div className="card-text">Padded: {sock.additionalFeatures.padded ? 'Yes' : 'No'}</div>
-                      <div className="card-text">Anti Bacterial: {sock.additionalFeatures.antiBacterial ? 'Yes' : 'No'}</div>
-                    </div>
-                    <div className="card-footer">
-                      <small className="text-muted">Added: {sock.addedTimestamp}</small>
-                    </div>
-                  </div>
                 ))}
             </div>
         </div>
