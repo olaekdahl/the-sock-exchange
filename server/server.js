@@ -1,5 +1,5 @@
 import express from 'express';
-import { MongoClient } from 'mongodb';
+import { MongoClient, ObjectId } from 'mongodb';
 import dotenv from 'dotenv';
 import cors from 'cors';
 
@@ -109,6 +109,31 @@ app.post('/api/socks', async (req, res) => {
     } catch (err) {
         console.error('Error:', err);
         res.status(500).send('Hmm, something doesn\'t smell right... Error adding sock');
+    }
+});
+
+// Example using curl:
+// curl -X DELETE http://localhost:3000/api/socks/:id
+app.delete('/api/socks/:id', async (req, res) => {
+    try {
+        const { id } = req.params;
+        const client = await MongoClient.connect(url);
+        const db = client.db(dbName);
+        const collection = db.collection(collectionName);
+        /**
+         * Deletes a sock document from the collection based on its _id value.
+         * @param {string} id - The _id value of the sock document to delete.
+         * @returns {Promise} A promise that resolves when the sock is deleted successfully.
+         */
+        const result = await collection.deleteOne({ _id: new ObjectId(id) });
+        if (result.deletedCount === 1) {
+            res.status(200).send('Sock deleted successfully');
+        } else {
+            res.status(404).send('Sock not found');
+        }
+    } catch (err) {
+        console.error('Error:', err);
+        res.status(500).send('Hmm, something doesn\'t smell right... Error deleting sock');
     }
 });
 
