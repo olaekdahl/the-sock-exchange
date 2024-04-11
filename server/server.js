@@ -96,7 +96,6 @@ app.post('/api/socks/search', async (req, res) => {
 app.post('/api/socks', async (req, res) => {
     try {
         const sock  = req.body;
-        console.log(sock);
         const client = await MongoClient.connect(url);
         const db = client.db(dbName);
         const collection = db.collection(collectionName);
