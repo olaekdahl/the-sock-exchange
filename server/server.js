@@ -137,6 +137,23 @@ app.delete('/api/socks/:id', async (req, res) => {
     }
 });
 
+app.get('/api/socks/count', async (_req, res) => {
+    try {
+        const client = await MongoClient.connect(url);
+        const db = client.db(dbName);
+        const collection = db.collection(collectionName);
+        /**
+         * Retrieves the total number of sock documents in the collection.
+         * @returns {Promise<number>} A promise that resolves to the total number of sock documents.
+         */
+        const count = await collection.countDocuments();
+        res.json({ count });
+    } catch (err) {
+        console.error('Error:', err);
+        res.status(500).send('Hmm, something doesn\'t smell right... Error fetching sock count');
+    }
+});
+
 app.listen(3000, () => {
     console.log('Server is running on port 3000');
 });
