@@ -78,7 +78,7 @@ function App() {
 
     <footer className={import.meta.env.VITE_REACT_ENV === "dev" ? "bg-yellow" : "bg-green"}>
       {/* Footer content */}
-      <div>{import.meta.env.VITE_REACT_ENV}</div>
+      <div><strong>{import.meta.env.VITE_REACT_ENV.toUpperCase()}</strong></div>
     </footer>
     </>
   );
