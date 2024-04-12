@@ -9,10 +9,11 @@ import {
 import Home from "./components/Home";
 import About from "./components/About";
 import Upload from "./components/Upload";
-import 'bootstrap/dist/css/bootstrap.min.css';
-import "bootstrap/dist/js/bootstrap.js"
 import HomePager from "./components/HomePager";
 import Search from "./components/Search";
+import "bootstrap/dist/css/bootstrap.min.css";
+import "bootstrap/dist/js/bootstrap.js"
+import "./App.css";
 
 function App() {
   const [data, setData] = useState([]); // Shared state to store the fetched data
@@ -21,6 +22,7 @@ function App() {
   };
 
   return (
+    <>
     <Router>
       <nav className="navbar navbar-expand-lg bg-body-tertiary">
         <div className="container-fluid">
@@ -73,6 +75,12 @@ function App() {
         </div>
       </main>
     </Router>
+
+    <footer className={import.meta.env.VITE_REACT_ENV === "dev" ? "bg-yellow" : "bg-green"}>
+      {/* Footer content */}
+      <div>{import.meta.env.VITE_REACT_ENV}</div>
+    </footer>
+    </>
   );
 }
 
