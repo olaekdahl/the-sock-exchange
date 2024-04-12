@@ -2,35 +2,39 @@
 const request = require('supertest');
 const express = require('express');
 const MongoClient = require('mongodb').MongoClient;
+let app, mongoServer, db, collection;
 
-// Set up the express app and route
-const app = express();
+beforeAll(async () => {
+  console.log("Running beforeAll");
+  mongoServer = new MongoMemoryServer();
+  const mongoUri = await mongoServer.getUri();
 
-// Mock MongoDB client
-jest.mock('mongodb', () => {
-  const mockFind = jest.fn();
-  mockFind.toArray = jest.fn(() => Promise.resolve(['sock1', 'sock2']));
-  const mockCollection = { find: mockFind };
-  const mockDb = { collection: () => mockCollection };
-  return { MongoClient: { connect: jest.fn(() => Promise.resolve({ db: () => mockDb })) } };
-});
+  const client = new MongoClient(mongoUri);
+  await client.connect();
 
-app.get('/api/socks', async (_req, res) => {
+  db = client.db('tse');
+  collection = db.collection('socks');
+
+  app = express();
+  app.get('/api/socks', async (_req, res) => {
     try {
-        const client = await MongoClient.connect('url');
-        const db = client.db('dbName');
-        const collection = db.collection('collectionName');
-        const socks = await collection.find({}).toArray();
-        res.json(socks);
+      const socks = await collection.find({}).toArray();
+      res.json(socks);
     } catch (err) {
-        console.error('Error:', err);
-        res.status(500).send('Hmm, something doesn\'t smell right... Error fetching socks');
+      console.error('Error:', err);
+      res.status(500).send('Hmm, something doesn\'t smell right... Error fetching socks');
     }
+  });
 });
 
-// Test the route
+afterAll(async () => {
+  await mongoServer.stop();
+});
+
 describe('/api/socks', () => {
   test('should fetch all socks and return as json', async () => {
+    await collection.insertMany(['sock1', 'sock2']);
+
     const response = await request(app).get('/api/socks');
     expect(response.status).toBe(200);
     expect(response.body).toEqual(['sock1', 'sock2']);
@@ -38,7 +42,8 @@ describe('/api/socks', () => {
   });
 
   test('should handle errors', async () => {
-    // Mock error scenario by throwing an error in the collection.find method
+    // Simulate an error by closing the MongoDB connection
+    await db.close();
     MongoClient.connect.mockImplementationOnce(() => {
       const error = new Error('Failed to connect');
       return Promise.reject(error);

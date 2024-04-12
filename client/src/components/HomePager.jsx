@@ -10,6 +10,8 @@
 import React, { useState, useEffect } from 'react';
 import imagePlaceHolder from '../assets/images/sock_placeholder.png';
 
+// onHandleSetData and data props are being passed from the parent (App.jsx). 
+//  Shared state is stored in the parent.
 const HomePager = ({onHandleSetData, data}) => {
     const [page, setPage] = useState(1); // State to store the current page number
 
@@ -90,9 +92,9 @@ const HomePager = ({onHandleSetData, data}) => {
                             <div className="card-text">Padded: {sock.additionalFeatures.padded ? 'Yes' : 'No'}</div>
                             <div className="card-text">Anti Bacterial: {sock.additionalFeatures.antiBacterial ? 'Yes' : 'No'}</div>
                         </div>
-                        <div className="card-footer">
+                        <div className="card-footer" style={{ display: 'flex', justifyContent: 'space-between' }}>
                             <small className="text-muted">Added: {sock.addedTimestamp}</small>
-                            <button className="btn btn-sm btn-danger" onClick={() => handleDelete(sock._id)} style={{ marginLeft: '40px' }}>Delete</button>
+                            <button className="btn btn-sm btn-danger" onClick={() => handleDelete(sock._id)}>Delete</button>
                         </div>
                     </div>
                 ))}
