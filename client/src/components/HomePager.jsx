@@ -9,6 +9,7 @@
 
 import React, { useState, useEffect } from 'react';
 import imagePlaceHolder from '../assets/images/sock_placeholder.png';
+import DocumentCount from './DocumentCount';
 
 // onHandleSetData and data props are being passed from the parent (App.jsx). 
 //  Shared state is stored in the parent.
@@ -69,6 +70,12 @@ const HomePager = ({onHandleSetData, data}) => {
     return (
         <div>
             <h1>The Sock Exchange</h1>
+            {/* 
+                This will re-render (re-paint) the DocumentCount component when there is a 
+                change to the data prop. This will cause aanother API call to /api/socks/count
+                to get the update count when a sock is added or deleted.
+             */}
+            <DocumentCount input={data} />
             <div style={{ display: 'flex', justifyContent: 'space-between', marginBottom: '20px' }}>
                 <button className='btn btn-primary' onClick={handlePreviousPage}>Back</button>
                 <button className='btn btn-primary' onClick={handleNextPage}>Next</button>
