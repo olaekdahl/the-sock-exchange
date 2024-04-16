@@ -7,6 +7,9 @@ RUN apt-get update && apt-get install -y gnupg && \
     echo "deb [ signed-by=/usr/share/keyrings/mongodb-server-7.0.gpg ] http://repo.mongodb.org/apt/debian bookworm/mongodb-org/7.0 main" | tee /etc/apt/sources.list.d/mongodb-org-7.0.list && \
     apt-get update && apt-get install -y mongodb-org
 
+# Install PostgreSQL
+RUN apt-get update && apt-get install -y postgresql postgresql-contrib
+
 # Delete cached packages 
 RUN apt-get clean && rm -rf /var/lib/apt/lists/*
 
@@ -31,14 +34,15 @@ RUN chmod +x ./import-data-mongodb.sh
 # Expose the port the app runs on
 EXPOSE 3000
 
-# Expose the default MongoDB port
+# Expose the default MongoDB and PostgreSQL ports
 EXPOSE 27017
+EXPOSE 5432
 
 # Node environment variables
 ENV MONGO_DB_URL="mongodb://localhost:27017"
 ENV MONGO_DB="tse"
 ENV MONGO_DB_COLLECTION="socks"
 
-# Start MongoDB and Node app
-CMD mongod --fork --logpath /var/log/mongodb.log --dbpath /data/db --bind_ip 127.0.0.1 && ./import-data-mongodb.sh && \
+# Start MongoDB, PostgreSQL and Node app
+CMD service postgresql start && mongod --fork --logpath /var/log/mongodb.log --dbpath /data/db --bind_ip 127.0.0.1 && ./import-data-mongodb.sh && \
     node server.js
