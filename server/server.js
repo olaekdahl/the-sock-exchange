@@ -53,8 +53,9 @@ app.get('/api/socks/:page/:limit', async (req, res) => {
 
 app.post('/api/register', async (req, res) => {
     try {
-        const user  = req.body;
-        if (user.user && user.email && user.user.trim() !== '' && user.email.trim() !== '') {
+        const { name, email }  = req.body;
+        console.log(req.body);
+        if (name && email && name.trim() !== '' && email.trim() !== '') {
             res.status(201).send(`{"message":"success"}`);
         } else {
             res.status(400).send(`{"message":"Invalid user or email"}`);
