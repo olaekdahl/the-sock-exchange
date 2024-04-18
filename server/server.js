@@ -112,6 +112,20 @@ app.post('/api/socks', async (req, res) => {
     }
 });
 
+app.post('/api/socks/register', async (req, res) => {
+    try {
+        const user  = req.body;
+        if (user.user && user.email && user.user.trim() !== '' && user.email.trim() !== '') {
+            res.status(201).send(`{"message":"success"}`);
+        } else {
+            res.status(400).send(`{"message":"Invalid user or email"}`);
+        }
+    } catch (err) {
+        console.error('Error:', err);
+        res.status(500).send('Hmm, something doesn\'t smell right... Error adding user');
+    }
+});
+
 // Example using curl:
 // curl -X DELETE http://localhost:3000/api/socks/:id
 app.delete('/api/socks/:id', async (req, res) => {
