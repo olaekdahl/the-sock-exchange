@@ -51,6 +51,20 @@ app.get('/api/socks/:page/:limit', async (req, res) => {
     }
 });
 
+app.post('/api/register', async (req, res) => {
+    try {
+        const user  = req.body;
+        if (user.user && user.email && user.user.trim() !== '' && user.email.trim() !== '') {
+            res.status(201).send(`{"message":"success"}`);
+        } else {
+            res.status(400).send(`{"message":"Invalid user or email"}`);
+        }
+    } catch (err) {
+        console.error('Error:', err);
+        res.status(500).send('Hmm, something doesn\'t smell right... Error adding user');
+    }
+});
+
 // Example using curl:
 // curl -X POST -H "Content-Type: application/json" -d '{"searchTerm": "blue"}' http://localhost:3000/api/socks/search
 app.post('/api/socks/search', async (req, res) => {
@@ -109,20 +123,6 @@ app.post('/api/socks', async (req, res) => {
     } catch (err) {
         console.error('Error:', err);
         res.status(500).send('Hmm, something doesn\'t smell right... Error adding sock');
-    }
-});
-
-app.post('/api/socks/register', async (req, res) => {
-    try {
-        const user  = req.body;
-        if (user.user && user.email && user.user.trim() !== '' && user.email.trim() !== '') {
-            res.status(201).send(`{"message":"success"}`);
-        } else {
-            res.status(400).send(`{"message":"Invalid user or email"}`);
-        }
-    } catch (err) {
-        console.error('Error:', err);
-        res.status(500).send('Hmm, something doesn\'t smell right... Error adding user');
     }
 });
 
