@@ -19,8 +19,42 @@
   {
     "userId": "user6",
     "sockDetails": {
-      "size": "Large",
-      "color": "Black",
+      "size": "Small",
+      "color": "Yellow",
+      "pattern": "Polka dot",
+      "material": "Polyester",
+      "condition": "Used",
+      "forFoot": "Both"
+    },
+    "additionalFeatures": {
+      "waterResistant": true,
+      "padded": true,
+      "antiBacterial": false
+    },
+    "addedTimestamp": "2024-01-27T10:00:00Z"
+  },
+  {
+    "userId": "user6",
+    "sockDetails": {
+      "size": "Medium",
+      "color": "Red",
+      "pattern": "Striped",
+      "material": "Wool",
+      "condition": "Used",
+      "forFoot": "Both"
+    },
+    "additionalFeatures": {
+      "waterResistant": false,
+      "padded": true,
+      "antiBacterial": false
+    },
+    "addedTimestamp": "2024-01-27T10:00:00Z"
+  },
+  {
+    "userId": "user6",
+    "sockDetails": {
+      "size": "Small",
+      "color": "Brown",
       "pattern": "Polka dot",
       "material": "Polyester",
       "condition": "Used",
@@ -28,6 +62,23 @@
     },
     "additionalFeatures": {
       "waterResistant": false,
+      "padded": true,
+      "antiBacterial": false
+    },
+    "addedTimestamp": "2024-01-27T10:00:00Z"
+  },
+  {
+    "userId": "user6",
+    "sockDetails": {
+      "size": "Small",
+      "color": "Green",
+      "pattern": "Dotted",
+      "material": "Wool",
+      "condition": "New",
+      "forFoot": "Left"
+    },
+    "additionalFeatures": {
+      "waterResistant": true,
       "padded": true,
       "antiBacterial": false
     },
@@ -53,8 +104,42 @@
   {
     "userId": "user6",
     "sockDetails": {
-      "size": "Large",
-      "color": "Black",
+      "size": "Small",
+      "color": "Yellow",
+      "pattern": "Polka dot",
+      "material": "Polyester",
+      "condition": "Used",
+      "forFoot": "Both"
+    },
+    "additionalFeatures": {
+      "waterResistant": true,
+      "padded": true,
+      "antiBacterial": false
+    },
+    "addedTimestamp": "2024-01-27T10:00:00Z"
+  },
+  {
+    "userId": "user6",
+    "sockDetails": {
+      "size": "Medium",
+      "color": "Red",
+      "pattern": "Striped",
+      "material": "Wool",
+      "condition": "Used",
+      "forFoot": "Both"
+    },
+    "additionalFeatures": {
+      "waterResistant": false,
+      "padded": true,
+      "antiBacterial": false
+    },
+    "addedTimestamp": "2024-01-27T10:00:00Z"
+  },
+  {
+    "userId": "user6",
+    "sockDetails": {
+      "size": "Small",
+      "color": "Brown",
       "pattern": "Polka dot",
       "material": "Polyester",
       "condition": "Used",
@@ -62,6 +147,23 @@
     },
     "additionalFeatures": {
       "waterResistant": false,
+      "padded": true,
+      "antiBacterial": false
+    },
+    "addedTimestamp": "2024-01-27T10:00:00Z"
+  },
+  {
+    "userId": "user6",
+    "sockDetails": {
+      "size": "Small",
+      "color": "Green",
+      "pattern": "Dotted",
+      "material": "Wool",
+      "condition": "New",
+      "forFoot": "Left"
+    },
+    "additionalFeatures": {
+      "waterResistant": true,
       "padded": true,
       "antiBacterial": false
     },
@@ -87,8 +189,42 @@
   {
     "userId": "user6",
     "sockDetails": {
-      "size": "Large",
-      "color": "Black",
+      "size": "Small",
+      "color": "Yellow",
+      "pattern": "Polka dot",
+      "material": "Polyester",
+      "condition": "Used",
+      "forFoot": "Both"
+    },
+    "additionalFeatures": {
+      "waterResistant": true,
+      "padded": true,
+      "antiBacterial": false
+    },
+    "addedTimestamp": "2024-01-27T10:00:00Z"
+  },
+  {
+    "userId": "user6",
+    "sockDetails": {
+      "size": "Medium",
+      "color": "Red",
+      "pattern": "Striped",
+      "material": "Wool",
+      "condition": "Used",
+      "forFoot": "Both"
+    },
+    "additionalFeatures": {
+      "waterResistant": false,
+      "padded": true,
+      "antiBacterial": false
+    },
+    "addedTimestamp": "2024-01-27T10:00:00Z"
+  },
+  {
+    "userId": "user6",
+    "sockDetails": {
+      "size": "Small",
+      "color": "Brown",
       "pattern": "Polka dot",
       "material": "Polyester",
       "condition": "Used",
@@ -96,6 +232,23 @@
     },
     "additionalFeatures": {
       "waterResistant": false,
+      "padded": true,
+      "antiBacterial": false
+    },
+    "addedTimestamp": "2024-01-27T10:00:00Z"
+  },
+  {
+    "userId": "user6",
+    "sockDetails": {
+      "size": "Small",
+      "color": "Green",
+      "pattern": "Dotted",
+      "material": "Wool",
+      "condition": "New",
+      "forFoot": "Left"
+    },
+    "additionalFeatures": {
+      "waterResistant": true,
       "padded": true,
       "antiBacterial": false
     },
@@ -121,8 +274,42 @@
   {
     "userId": "user6",
     "sockDetails": {
-      "size": "Large",
-      "color": "Black",
+      "size": "Small",
+      "color": "Yellow",
+      "pattern": "Polka dot",
+      "material": "Polyester",
+      "condition": "Used",
+      "forFoot": "Both"
+    },
+    "additionalFeatures": {
+      "waterResistant": true,
+      "padded": true,
+      "antiBacterial": false
+    },
+    "addedTimestamp": "2024-01-27T10:00:00Z"
+  },
+  {
+    "userId": "user6",
+    "sockDetails": {
+      "size": "Medium",
+      "color": "Red",
+      "pattern": "Striped",
+      "material": "Wool",
+      "condition": "Used",
+      "forFoot": "Both"
+    },
+    "additionalFeatures": {
+      "waterResistant": false,
+      "padded": true,
+      "antiBacterial": false
+    },
+    "addedTimestamp": "2024-01-27T10:00:00Z"
+  },
+  {
+    "userId": "user6",
+    "sockDetails": {
+      "size": "Small",
+      "color": "Brown",
       "pattern": "Polka dot",
       "material": "Polyester",
       "condition": "Used",
@@ -130,6 +317,23 @@
     },
     "additionalFeatures": {
       "waterResistant": false,
+      "padded": true,
+      "antiBacterial": false
+    },
+    "addedTimestamp": "2024-01-27T10:00:00Z"
+  },
+  {
+    "userId": "user6",
+    "sockDetails": {
+      "size": "Small",
+      "color": "Green",
+      "pattern": "Dotted",
+      "material": "Wool",
+      "condition": "New",
+      "forFoot": "Left"
+    },
+    "additionalFeatures": {
+      "waterResistant": true,
       "padded": true,
       "antiBacterial": false
     },
@@ -155,8 +359,42 @@
   {
     "userId": "user6",
     "sockDetails": {
-      "size": "Large",
-      "color": "Black",
+      "size": "Small",
+      "color": "Yellow",
+      "pattern": "Polka dot",
+      "material": "Polyester",
+      "condition": "Used",
+      "forFoot": "Both"
+    },
+    "additionalFeatures": {
+      "waterResistant": true,
+      "padded": true,
+      "antiBacterial": false
+    },
+    "addedTimestamp": "2024-01-27T10:00:00Z"
+  },
+  {
+    "userId": "user6",
+    "sockDetails": {
+      "size": "Medium",
+      "color": "Red",
+      "pattern": "Striped",
+      "material": "Wool",
+      "condition": "Used",
+      "forFoot": "Both"
+    },
+    "additionalFeatures": {
+      "waterResistant": false,
+      "padded": true,
+      "antiBacterial": false
+    },
+    "addedTimestamp": "2024-01-27T10:00:00Z"
+  },
+  {
+    "userId": "user6",
+    "sockDetails": {
+      "size": "Small",
+      "color": "Brown",
       "pattern": "Polka dot",
       "material": "Polyester",
       "condition": "Used",
@@ -164,6 +402,23 @@
     },
     "additionalFeatures": {
       "waterResistant": false,
+      "padded": true,
+      "antiBacterial": false
+    },
+    "addedTimestamp": "2024-01-27T10:00:00Z"
+  },
+  {
+    "userId": "user6",
+    "sockDetails": {
+      "size": "Small",
+      "color": "Green",
+      "pattern": "Dotted",
+      "material": "Wool",
+      "condition": "New",
+      "forFoot": "Left"
+    },
+    "additionalFeatures": {
+      "waterResistant": true,
       "padded": true,
       "antiBacterial": false
     },
@@ -189,8 +444,42 @@
   {
     "userId": "user6",
     "sockDetails": {
-      "size": "Large",
-      "color": "Black",
+      "size": "Small",
+      "color": "Yellow",
+      "pattern": "Polka dot",
+      "material": "Polyester",
+      "condition": "Used",
+      "forFoot": "Both"
+    },
+    "additionalFeatures": {
+      "waterResistant": true,
+      "padded": true,
+      "antiBacterial": false
+    },
+    "addedTimestamp": "2024-01-27T10:00:00Z"
+  },
+  {
+    "userId": "user6",
+    "sockDetails": {
+      "size": "Medium",
+      "color": "Red",
+      "pattern": "Striped",
+      "material": "Wool",
+      "condition": "Used",
+      "forFoot": "Both"
+    },
+    "additionalFeatures": {
+      "waterResistant": false,
+      "padded": true,
+      "antiBacterial": false
+    },
+    "addedTimestamp": "2024-01-27T10:00:00Z"
+  },
+  {
+    "userId": "user6",
+    "sockDetails": {
+      "size": "Small",
+      "color": "Brown",
       "pattern": "Polka dot",
       "material": "Polyester",
       "condition": "Used",
@@ -198,6 +487,23 @@
     },
     "additionalFeatures": {
       "waterResistant": false,
+      "padded": true,
+      "antiBacterial": false
+    },
+    "addedTimestamp": "2024-01-27T10:00:00Z"
+  },
+  {
+    "userId": "user6",
+    "sockDetails": {
+      "size": "Small",
+      "color": "Green",
+      "pattern": "Dotted",
+      "material": "Wool",
+      "condition": "New",
+      "forFoot": "Left"
+    },
+    "additionalFeatures": {
+      "waterResistant": true,
       "padded": true,
       "antiBacterial": false
     },
@@ -223,8 +529,42 @@
   {
     "userId": "user6",
     "sockDetails": {
-      "size": "Large",
-      "color": "Black",
+      "size": "Small",
+      "color": "Yellow",
+      "pattern": "Polka dot",
+      "material": "Polyester",
+      "condition": "Used",
+      "forFoot": "Both"
+    },
+    "additionalFeatures": {
+      "waterResistant": true,
+      "padded": true,
+      "antiBacterial": false
+    },
+    "addedTimestamp": "2024-01-27T10:00:00Z"
+  },
+  {
+    "userId": "user6",
+    "sockDetails": {
+      "size": "Medium",
+      "color": "Red",
+      "pattern": "Striped",
+      "material": "Wool",
+      "condition": "Used",
+      "forFoot": "Both"
+    },
+    "additionalFeatures": {
+      "waterResistant": false,
+      "padded": true,
+      "antiBacterial": false
+    },
+    "addedTimestamp": "2024-01-27T10:00:00Z"
+  },
+  {
+    "userId": "user6",
+    "sockDetails": {
+      "size": "Small",
+      "color": "Brown",
       "pattern": "Polka dot",
       "material": "Polyester",
       "condition": "Used",
@@ -232,6 +572,23 @@
     },
     "additionalFeatures": {
       "waterResistant": false,
+      "padded": true,
+      "antiBacterial": false
+    },
+    "addedTimestamp": "2024-01-27T10:00:00Z"
+  },
+  {
+    "userId": "user6",
+    "sockDetails": {
+      "size": "Small",
+      "color": "Green",
+      "pattern": "Dotted",
+      "material": "Wool",
+      "condition": "New",
+      "forFoot": "Left"
+    },
+    "additionalFeatures": {
+      "waterResistant": true,
       "padded": true,
       "antiBacterial": false
     },
@@ -257,8 +614,42 @@
   {
     "userId": "user6",
     "sockDetails": {
-      "size": "Large",
-      "color": "Black",
+      "size": "Small",
+      "color": "Yellow",
+      "pattern": "Polka dot",
+      "material": "Polyester",
+      "condition": "Used",
+      "forFoot": "Both"
+    },
+    "additionalFeatures": {
+      "waterResistant": true,
+      "padded": true,
+      "antiBacterial": false
+    },
+    "addedTimestamp": "2024-01-27T10:00:00Z"
+  },
+  {
+    "userId": "user6",
+    "sockDetails": {
+      "size": "Medium",
+      "color": "Red",
+      "pattern": "Striped",
+      "material": "Wool",
+      "condition": "Used",
+      "forFoot": "Both"
+    },
+    "additionalFeatures": {
+      "waterResistant": false,
+      "padded": true,
+      "antiBacterial": false
+    },
+    "addedTimestamp": "2024-01-27T10:00:00Z"
+  },
+  {
+    "userId": "user6",
+    "sockDetails": {
+      "size": "Small",
+      "color": "Brown",
       "pattern": "Polka dot",
       "material": "Polyester",
       "condition": "Used",
@@ -266,6 +657,23 @@
     },
     "additionalFeatures": {
       "waterResistant": false,
+      "padded": true,
+      "antiBacterial": false
+    },
+    "addedTimestamp": "2024-01-27T10:00:00Z"
+  },
+  {
+    "userId": "user6",
+    "sockDetails": {
+      "size": "Small",
+      "color": "Green",
+      "pattern": "Dotted",
+      "material": "Wool",
+      "condition": "New",
+      "forFoot": "Left"
+    },
+    "additionalFeatures": {
+      "waterResistant": true,
       "padded": true,
       "antiBacterial": false
     },
@@ -291,8 +699,42 @@
   {
     "userId": "user6",
     "sockDetails": {
-      "size": "Large",
-      "color": "Black",
+      "size": "Small",
+      "color": "Yellow",
+      "pattern": "Polka dot",
+      "material": "Polyester",
+      "condition": "Used",
+      "forFoot": "Both"
+    },
+    "additionalFeatures": {
+      "waterResistant": true,
+      "padded": true,
+      "antiBacterial": false
+    },
+    "addedTimestamp": "2024-01-27T10:00:00Z"
+  },
+  {
+    "userId": "user6",
+    "sockDetails": {
+      "size": "Medium",
+      "color": "Red",
+      "pattern": "Striped",
+      "material": "Wool",
+      "condition": "Used",
+      "forFoot": "Both"
+    },
+    "additionalFeatures": {
+      "waterResistant": false,
+      "padded": true,
+      "antiBacterial": false
+    },
+    "addedTimestamp": "2024-01-27T10:00:00Z"
+  },
+  {
+    "userId": "user6",
+    "sockDetails": {
+      "size": "Small",
+      "color": "Brown",
       "pattern": "Polka dot",
       "material": "Polyester",
       "condition": "Used",
@@ -300,6 +742,23 @@
     },
     "additionalFeatures": {
       "waterResistant": false,
+      "padded": true,
+      "antiBacterial": false
+    },
+    "addedTimestamp": "2024-01-27T10:00:00Z"
+  },
+  {
+    "userId": "user6",
+    "sockDetails": {
+      "size": "Small",
+      "color": "Green",
+      "pattern": "Dotted",
+      "material": "Wool",
+      "condition": "New",
+      "forFoot": "Left"
+    },
+    "additionalFeatures": {
+      "waterResistant": true,
       "padded": true,
       "antiBacterial": false
     },
@@ -325,8 +784,42 @@
   {
     "userId": "user6",
     "sockDetails": {
-      "size": "Large",
-      "color": "Black",
+      "size": "Small",
+      "color": "Yellow",
+      "pattern": "Polka dot",
+      "material": "Polyester",
+      "condition": "Used",
+      "forFoot": "Both"
+    },
+    "additionalFeatures": {
+      "waterResistant": true,
+      "padded": true,
+      "antiBacterial": false
+    },
+    "addedTimestamp": "2024-01-27T10:00:00Z"
+  },
+  {
+    "userId": "user6",
+    "sockDetails": {
+      "size": "Medium",
+      "color": "Red",
+      "pattern": "Striped",
+      "material": "Wool",
+      "condition": "Used",
+      "forFoot": "Both"
+    },
+    "additionalFeatures": {
+      "waterResistant": false,
+      "padded": true,
+      "antiBacterial": false
+    },
+    "addedTimestamp": "2024-01-27T10:00:00Z"
+  },
+  {
+    "userId": "user6",
+    "sockDetails": {
+      "size": "Small",
+      "color": "Brown",
       "pattern": "Polka dot",
       "material": "Polyester",
       "condition": "Used",
@@ -342,508 +835,15 @@
   {
     "userId": "user6",
     "sockDetails": {
-      "size": "Large",
-      "color": "Black",
-      "pattern": "Polka dot",
-      "material": "Polyester",
-      "condition": "Used",
-      "forFoot": "Both"
+      "size": "Small",
+      "color": "Green",
+      "pattern": "Dotted",
+      "material": "Wool",
+      "condition": "New",
+      "forFoot": "Left"
     },
     "additionalFeatures": {
-      "waterResistant": false,
-      "padded": true,
-      "antiBacterial": false
-    },
-    "addedTimestamp": "2024-01-27T10:00:00Z"
-  },
-  {
-    "userId": "user6",
-    "sockDetails": {
-      "size": "Large",
-      "color": "Black",
-      "pattern": "Polka dot",
-      "material": "Polyester",
-      "condition": "Used",
-      "forFoot": "Both"
-    },
-    "additionalFeatures": {
-      "waterResistant": false,
-      "padded": true,
-      "antiBacterial": false
-    },
-    "addedTimestamp": "2024-01-27T10:00:00Z"
-  },
-  {
-    "userId": "user6",
-    "sockDetails": {
-      "size": "Large",
-      "color": "Black",
-      "pattern": "Polka dot",
-      "material": "Polyester",
-      "condition": "Used",
-      "forFoot": "Both"
-    },
-    "additionalFeatures": {
-      "waterResistant": false,
-      "padded": true,
-      "antiBacterial": false
-    },
-    "addedTimestamp": "2024-01-27T10:00:00Z"
-  },
-  {
-    "userId": "user6",
-    "sockDetails": {
-      "size": "Large",
-      "color": "Black",
-      "pattern": "Polka dot",
-      "material": "Polyester",
-      "condition": "Used",
-      "forFoot": "Both"
-    },
-    "additionalFeatures": {
-      "waterResistant": false,
-      "padded": true,
-      "antiBacterial": false
-    },
-    "addedTimestamp": "2024-01-27T10:00:00Z"
-  },
-  {
-    "userId": "user6",
-    "sockDetails": {
-      "size": "Large",
-      "color": "Black",
-      "pattern": "Polka dot",
-      "material": "Polyester",
-      "condition": "Used",
-      "forFoot": "Both"
-    },
-    "additionalFeatures": {
-      "waterResistant": false,
-      "padded": true,
-      "antiBacterial": false
-    },
-    "addedTimestamp": "2024-01-27T10:00:00Z"
-  },
-  {
-    "userId": "user6",
-    "sockDetails": {
-      "size": "Large",
-      "color": "Black",
-      "pattern": "Polka dot",
-      "material": "Polyester",
-      "condition": "Used",
-      "forFoot": "Both"
-    },
-    "additionalFeatures": {
-      "waterResistant": false,
-      "padded": true,
-      "antiBacterial": false
-    },
-    "addedTimestamp": "2024-01-27T10:00:00Z"
-  },
-  {
-    "userId": "user6",
-    "sockDetails": {
-      "size": "Large",
-      "color": "Black",
-      "pattern": "Polka dot",
-      "material": "Polyester",
-      "condition": "Used",
-      "forFoot": "Both"
-    },
-    "additionalFeatures": {
-      "waterResistant": false,
-      "padded": true,
-      "antiBacterial": false
-    },
-    "addedTimestamp": "2024-01-27T10:00:00Z"
-  },
-  {
-    "userId": "user6",
-    "sockDetails": {
-      "size": "Large",
-      "color": "Black",
-      "pattern": "Polka dot",
-      "material": "Polyester",
-      "condition": "Used",
-      "forFoot": "Both"
-    },
-    "additionalFeatures": {
-      "waterResistant": false,
-      "padded": true,
-      "antiBacterial": false
-    },
-    "addedTimestamp": "2024-01-27T10:00:00Z"
-  },
-  {
-    "userId": "user6",
-    "sockDetails": {
-      "size": "Large",
-      "color": "Black",
-      "pattern": "Polka dot",
-      "material": "Polyester",
-      "condition": "Used",
-      "forFoot": "Both"
-    },
-    "additionalFeatures": {
-      "waterResistant": false,
-      "padded": true,
-      "antiBacterial": false
-    },
-    "addedTimestamp": "2024-01-27T10:00:00Z"
-  },
-  {
-    "userId": "user6",
-    "sockDetails": {
-      "size": "Large",
-      "color": "Black",
-      "pattern": "Polka dot",
-      "material": "Polyester",
-      "condition": "Used",
-      "forFoot": "Both"
-    },
-    "additionalFeatures": {
-      "waterResistant": false,
-      "padded": true,
-      "antiBacterial": false
-    },
-    "addedTimestamp": "2024-01-27T10:00:00Z"
-  },
-  {
-    "userId": "user6",
-    "sockDetails": {
-      "size": "Large",
-      "color": "Black",
-      "pattern": "Polka dot",
-      "material": "Polyester",
-      "condition": "Used",
-      "forFoot": "Both"
-    },
-    "additionalFeatures": {
-      "waterResistant": false,
-      "padded": true,
-      "antiBacterial": false
-    },
-    "addedTimestamp": "2024-01-27T10:00:00Z"
-  },
-  {
-    "userId": "user6",
-    "sockDetails": {
-      "size": "Large",
-      "color": "Black",
-      "pattern": "Polka dot",
-      "material": "Polyester",
-      "condition": "Used",
-      "forFoot": "Both"
-    },
-    "additionalFeatures": {
-      "waterResistant": false,
-      "padded": true,
-      "antiBacterial": false
-    },
-    "addedTimestamp": "2024-01-27T10:00:00Z"
-  },
-  {
-    "userId": "user6",
-    "sockDetails": {
-      "size": "Large",
-      "color": "Black",
-      "pattern": "Polka dot",
-      "material": "Polyester",
-      "condition": "Used",
-      "forFoot": "Both"
-    },
-    "additionalFeatures": {
-      "waterResistant": false,
-      "padded": true,
-      "antiBacterial": false
-    },
-    "addedTimestamp": "2024-01-27T10:00:00Z"
-  },
-  {
-    "userId": "user6",
-    "sockDetails": {
-      "size": "Large",
-      "color": "Black",
-      "pattern": "Polka dot",
-      "material": "Polyester",
-      "condition": "Used",
-      "forFoot": "Both"
-    },
-    "additionalFeatures": {
-      "waterResistant": false,
-      "padded": true,
-      "antiBacterial": false
-    },
-    "addedTimestamp": "2024-01-27T10:00:00Z"
-  },
-  {
-    "userId": "user6",
-    "sockDetails": {
-      "size": "Large",
-      "color": "Black",
-      "pattern": "Polka dot",
-      "material": "Polyester",
-      "condition": "Used",
-      "forFoot": "Both"
-    },
-    "additionalFeatures": {
-      "waterResistant": false,
-      "padded": true,
-      "antiBacterial": false
-    },
-    "addedTimestamp": "2024-01-27T10:00:00Z"
-  },
-  {
-    "userId": "user6",
-    "sockDetails": {
-      "size": "Large",
-      "color": "Black",
-      "pattern": "Polka dot",
-      "material": "Polyester",
-      "condition": "Used",
-      "forFoot": "Both"
-    },
-    "additionalFeatures": {
-      "waterResistant": false,
-      "padded": true,
-      "antiBacterial": false
-    },
-    "addedTimestamp": "2024-01-27T10:00:00Z"
-  },
-  {
-    "userId": "user6",
-    "sockDetails": {
-      "size": "Large",
-      "color": "Black",
-      "pattern": "Polka dot",
-      "material": "Polyester",
-      "condition": "Used",
-      "forFoot": "Both"
-    },
-    "additionalFeatures": {
-      "waterResistant": false,
-      "padded": true,
-      "antiBacterial": false
-    },
-    "addedTimestamp": "2024-01-27T10:00:00Z"
-  },
-  {
-    "userId": "user6",
-    "sockDetails": {
-      "size": "Large",
-      "color": "Black",
-      "pattern": "Polka dot",
-      "material": "Polyester",
-      "condition": "Used",
-      "forFoot": "Both"
-    },
-    "additionalFeatures": {
-      "waterResistant": false,
-      "padded": true,
-      "antiBacterial": false
-    },
-    "addedTimestamp": "2024-01-27T10:00:00Z"
-  },
-  {
-    "userId": "user6",
-    "sockDetails": {
-      "size": "Large",
-      "color": "Black",
-      "pattern": "Polka dot",
-      "material": "Polyester",
-      "condition": "Used",
-      "forFoot": "Both"
-    },
-    "additionalFeatures": {
-      "waterResistant": false,
-      "padded": true,
-      "antiBacterial": false
-    },
-    "addedTimestamp": "2024-01-27T10:00:00Z"
-  },
-  {
-    "userId": "user6",
-    "sockDetails": {
-      "size": "Large",
-      "color": "Black",
-      "pattern": "Polka dot",
-      "material": "Polyester",
-      "condition": "Used",
-      "forFoot": "Both"
-    },
-    "additionalFeatures": {
-      "waterResistant": false,
-      "padded": true,
-      "antiBacterial": false
-    },
-    "addedTimestamp": "2024-01-27T10:00:00Z"
-  },
-  {
-    "userId": "user6",
-    "sockDetails": {
-      "size": "Large",
-      "color": "Black",
-      "pattern": "Polka dot",
-      "material": "Polyester",
-      "condition": "Used",
-      "forFoot": "Both"
-    },
-    "additionalFeatures": {
-      "waterResistant": false,
-      "padded": true,
-      "antiBacterial": false
-    },
-    "addedTimestamp": "2024-01-27T10:00:00Z"
-  },
-  {
-    "userId": "user6",
-    "sockDetails": {
-      "size": "Large",
-      "color": "Black",
-      "pattern": "Polka dot",
-      "material": "Polyester",
-      "condition": "Used",
-      "forFoot": "Both"
-    },
-    "additionalFeatures": {
-      "waterResistant": false,
-      "padded": true,
-      "antiBacterial": false
-    },
-    "addedTimestamp": "2024-01-27T10:00:00Z"
-  },
-  {
-    "userId": "user6",
-    "sockDetails": {
-      "size": "Large",
-      "color": "Black",
-      "pattern": "Polka dot",
-      "material": "Polyester",
-      "condition": "Used",
-      "forFoot": "Both"
-    },
-    "additionalFeatures": {
-      "waterResistant": false,
-      "padded": true,
-      "antiBacterial": false
-    },
-    "addedTimestamp": "2024-01-27T10:00:00Z"
-  },
-  {
-    "userId": "user6",
-    "sockDetails": {
-      "size": "Large",
-      "color": "Black",
-      "pattern": "Polka dot",
-      "material": "Polyester",
-      "condition": "Used",
-      "forFoot": "Both"
-    },
-    "additionalFeatures": {
-      "waterResistant": false,
-      "padded": true,
-      "antiBacterial": false
-    },
-    "addedTimestamp": "2024-01-27T10:00:00Z"
-  },
-  {
-    "userId": "user6",
-    "sockDetails": {
-      "size": "Large",
-      "color": "Black",
-      "pattern": "Polka dot",
-      "material": "Polyester",
-      "condition": "Used",
-      "forFoot": "Both"
-    },
-    "additionalFeatures": {
-      "waterResistant": false,
-      "padded": true,
-      "antiBacterial": false
-    },
-    "addedTimestamp": "2024-01-27T10:00:00Z"
-  },
-  {
-    "userId": "user6",
-    "sockDetails": {
-      "size": "Large",
-      "color": "Black",
-      "pattern": "Polka dot",
-      "material": "Polyester",
-      "condition": "Used",
-      "forFoot": "Both"
-    },
-    "additionalFeatures": {
-      "waterResistant": false,
-      "padded": true,
-      "antiBacterial": false
-    },
-    "addedTimestamp": "2024-01-27T10:00:00Z"
-  },
-  {
-    "userId": "user6",
-    "sockDetails": {
-      "size": "Large",
-      "color": "Black",
-      "pattern": "Polka dot",
-      "material": "Polyester",
-      "condition": "Used",
-      "forFoot": "Both"
-    },
-    "additionalFeatures": {
-      "waterResistant": false,
-      "padded": true,
-      "antiBacterial": false
-    },
-    "addedTimestamp": "2024-01-27T10:00:00Z"
-  },
-  {
-    "userId": "user6",
-    "sockDetails": {
-      "size": "Large",
-      "color": "Black",
-      "pattern": "Polka dot",
-      "material": "Polyester",
-      "condition": "Used",
-      "forFoot": "Both"
-    },
-    "additionalFeatures": {
-      "waterResistant": false,
-      "padded": true,
-      "antiBacterial": false
-    },
-    "addedTimestamp": "2024-01-27T10:00:00Z"
-  },
-  {
-    "userId": "user6",
-    "sockDetails": {
-      "size": "Large",
-      "color": "Black",
-      "pattern": "Polka dot",
-      "material": "Polyester",
-      "condition": "Used",
-      "forFoot": "Both"
-    },
-    "additionalFeatures": {
-      "waterResistant": false,
-      "padded": true,
-      "antiBacterial": false
-    },
-    "addedTimestamp": "2024-01-27T10:00:00Z"
-  },
-  {
-    "userId": "user6",
-    "sockDetails": {
-      "size": "Large",
-      "color": "Black",
-      "pattern": "Polka dot",
-      "material": "Polyester",
-      "condition": "Used",
-      "forFoot": "Both"
-    },
-    "additionalFeatures": {
-      "waterResistant": false,
+      "waterResistant": true,
       "padded": true,
       "antiBacterial": false
     },
