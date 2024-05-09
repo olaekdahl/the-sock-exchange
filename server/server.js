@@ -62,7 +62,7 @@ app.get('/api/socks', async (_req, res) => {
          * Retrieves all socks from the collection.
          * @returns {Promise<Array>} A promise that resolves to an array of socks.
          */
-        const socks = await collection.find({}).limit(50).toArray();
+        const socks = await collection.find({}).toArray();
         res.json(socks);
     } catch (err) {
         console.error('Error:', err);
