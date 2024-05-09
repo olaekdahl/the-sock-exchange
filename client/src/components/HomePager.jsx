@@ -101,7 +101,7 @@ const HomePager = ({onHandleSetData, data}) => {
                         </div>
                         <div className="card-footer" style={{ display: 'flex', justifyContent: 'space-between' }}>
                             <small className="text-muted">Added: {sock.addedTimestamp}</small>
-                            <button className="btn btn-sm btn-danger" onClick={() => handleDelete(sock._id)}>Delete</button>
+                            {/* <button className="btn btn-sm btn-danger" onClick={() => handleDelete(sock._id)}>Delete</button> */}
                         </div>
                     </div>
                 ))}
