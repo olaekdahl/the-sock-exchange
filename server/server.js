@@ -2,8 +2,48 @@ import express from 'express';
 import { MongoClient, ObjectId } from 'mongodb';
 import dotenv from 'dotenv';
 import cors from 'cors';
+import Ajv from 'ajv';
 
 dotenv.config();
+
+const ajv = new Ajv();
+
+// Define JSON schema for sock object
+const sockSchema = {
+    type: 'object',
+    properties: {
+        sock: {
+            type: 'object',
+            properties: {
+                userId: { type: 'string' },
+                sockDetails: {
+                    type: 'object',
+                    properties: {
+                        size: { type: 'string' },
+                        color: { type: 'string' },
+                        pattern: { type: 'string' },
+                        material: { type: 'string' },
+                        condition: { type: 'string' },
+                        forFoot: { type: 'string' }
+                    },
+                    required: ['size', 'color', 'pattern', 'material', 'condition', 'forFoot']
+                },
+                additionalFeatures: {
+                    type: 'object',
+                    properties: {
+                        waterResistant: { type: 'boolean' },
+                        padded: { type: 'boolean' },
+                        antiBacterial: { type: 'boolean' }
+                    },
+                    required: ['waterResistant', 'padded', 'antiBacterial']
+                },
+                addedTimestamp: { type: 'string' } // Assuming it's a string without a specific format
+            },
+            required: ['userId', 'sockDetails', 'additionalFeatures', 'addedTimestamp']
+        }
+    },
+    required: ['sock']
+};
 
 const app = express();
 app.use(express.json());
@@ -110,7 +150,14 @@ app.post('/api/socks/search', async (req, res) => {
 // }' http://localhost:3000/api/socks
 app.post('/api/socks', async (req, res) => {
     try {
-        const sock  = req.body;
+        const sock = req.body;
+        console.log(sock);
+        // Validate the incoming JSON against the schema
+        const valid = ajv.validate(sockSchema, sock);
+        if (!valid) {
+            console.error('Validation error:', ajv.errors);
+            return res.status(400).json({ message: 'Invalid sock data' });
+        }
         const client = await MongoClient.connect(url);
         const db = client.db(dbName);
         const collection = db.collection(collectionName);
@@ -120,7 +167,7 @@ app.post('/api/socks', async (req, res) => {
          * @returns {Promise} A promise that resolves when the sock is added successfully.
          */
         const result = await collection.insertOne(sock);
-        res.status(201).send(`{"_id":"${result.insertedId}"}`);
+        res.status(201).send(`{"_id":${result.insertedId}}`);
     } catch (err) {
         console.error('Error:', err);
         res.status(500).send('Hmm, something doesn\'t smell right... Error adding sock');
