@@ -12,37 +12,31 @@ const ajv = new Ajv();
 const sockSchema = {
     type: 'object',
     properties: {
-        sock: {
+        userId: { type: 'string' },
+        sockDetails: {
             type: 'object',
             properties: {
-                userId: { type: 'string' },
-                sockDetails: {
-                    type: 'object',
-                    properties: {
-                        size: { type: 'string' },
-                        color: { type: 'string' },
-                        pattern: { type: 'string' },
-                        material: { type: 'string' },
-                        condition: { type: 'string' },
-                        forFoot: { type: 'string' }
-                    },
-                    required: ['size', 'color', 'pattern', 'material', 'condition', 'forFoot']
-                },
-                additionalFeatures: {
-                    type: 'object',
-                    properties: {
-                        waterResistant: { type: 'boolean' },
-                        padded: { type: 'boolean' },
-                        antiBacterial: { type: 'boolean' }
-                    },
-                    required: ['waterResistant', 'padded', 'antiBacterial']
-                },
-                addedTimestamp: { type: 'string' } // Assuming it's a string without a specific format
+                size: { type: 'string' },
+                color: { type: 'string' },
+                pattern: { type: 'string' },
+                material: { type: 'string' },
+                condition: { type: 'string' },
+                forFoot: { type: 'string' }
             },
-            required: ['userId', 'sockDetails', 'additionalFeatures', 'addedTimestamp']
-        }
+            required: ['size', 'color', 'pattern', 'material', 'condition', 'forFoot']
+        },
+        additionalFeatures: {
+            type: 'object',
+            properties: {
+                waterResistant: { type: 'boolean' },
+                padded: { type: 'boolean' },
+                antiBacterial: { type: 'boolean' }
+            },
+            required: ['waterResistant', 'padded', 'antiBacterial']
+        },
+        addedTimestamp: { type: 'string' } // Assuming it's a string without a specific format
     },
-    required: ['sock']
+    required: ['userId', 'sockDetails', 'additionalFeatures', 'addedTimestamp']
 };
 
 const app = express();
@@ -167,7 +161,7 @@ app.post('/api/socks', async (req, res) => {
          * @returns {Promise} A promise that resolves when the sock is added successfully.
          */
         const result = await collection.insertOne(sock);
-        res.status(201).send(`{"_id":${result.insertedId}}`);
+        res.status(201).send(`{"_id":"${result.insertedId}"}`);
     } catch (err) {
         console.error('Error:', err);
         res.status(500).send('Hmm, something doesn\'t smell right... Error adding sock');
