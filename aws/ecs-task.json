@@ -12,6 +12,16 @@
                     "appProtocol": "http"
                 }
             ],
+            "healthCheck": {
+                "retries": 3,
+                "command": [
+                    "CMD-SHELL",
+                    "curl -f http://localhost:3000/api/socks/1/1' || exit 1"
+                ],
+                "timeout": 5,
+                "interval": 30,
+                "startPeriod": null
+            },
             "essential": true,
             "environment": [],
             "environmentFiles": [],
