@@ -47,6 +47,13 @@ jobs:
     - name: Checkout
       uses: actions/checkout@v4
 
+    - name: Copy files
+      run: |
+        cp -f ./scripts/sock-data.json docker/
+        cp -f ./scripts/import-data-mongodb.sh docker/
+        cp -f ./server/package*.json docker/
+        cp -f ./server/server.js docker/
+
     - name: Configure AWS credentials
       uses: aws-actions/configure-aws-credentials@v4
       with:
