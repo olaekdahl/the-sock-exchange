@@ -10,6 +10,9 @@ RUN apt-get update && apt-get install -y gnupg && \
 # Install PostgreSQL
 RUN apt-get update && apt-get install -y postgresql postgresql-contrib
 
+# Install CURL for ECS Helth Checks
+RUN apt-get update && apt-get install -y --no-install-recommends curl
+
 # Delete cached packages 
 RUN apt-get clean && rm -rf /var/lib/apt/lists/*
 
