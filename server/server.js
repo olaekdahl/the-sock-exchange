@@ -57,6 +57,7 @@ app.get('/api/socks', async (_req, res) => {
          * @returns {Promise<Array>} A promise that resolves to an array of socks.
          */
         const socks = await collection.find({}).toArray();
+        client.close();
         res.json(socks);
     } catch (err) {
         console.error('Error:', err);
@@ -78,6 +79,7 @@ app.get('/api/socks/:page/:limit', async (req, res) => {
          * @returns {Promise<Array>} A promise that resolves to an array of socks.
          */
         const socks = await collection.find({}).skip((page - 1) * limit).limit(limit).toArray();
+        client.close();
         res.json(socks);
     } catch (err) {
         console.error('Error:', err);
@@ -115,6 +117,7 @@ app.post('/api/socks/search', async (req, res) => {
          * @returns {Promise<Array>} A promise that resolves to an array of socks.
          */
         const socks = await collection.find({ 'sockDetails.color': regex }).toArray();
+        client.close();
         res.json(socks);
     } catch (err) {
         console.error('Error:', err);
@@ -161,6 +164,7 @@ app.post('/api/socks', async (req, res) => {
          * @returns {Promise} A promise that resolves when the sock is added successfully.
          */
         const result = await collection.insertOne(sock);
+        client.close();
         res.status(201).send(`{"_id":"${result.insertedId}"}`);
     } catch (err) {
         console.error('Error:', err);
@@ -182,6 +186,7 @@ app.delete('/api/socks/:id', async (req, res) => {
          * @returns {Promise} A promise that resolves when the sock is deleted successfully.
          */
         const result = await collection.deleteOne({ _id: new ObjectId(id) });
+        client.close();
         if (result.deletedCount === 1) {
             res.status(200).send('Sock deleted successfully');
         } else {
@@ -203,6 +208,7 @@ app.get('/api/socks/count', async (_req, res) => {
          * @returns {Promise<number>} A promise that resolves to the total number of sock documents.
          */
         const count = await collection.countDocuments();
+        client.close();
         res.json({ count });
     } catch (err) {
         console.error('Error:', err);
