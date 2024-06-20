@@ -30,7 +30,7 @@ const Home = () => {
 
   return (
     <div>
-      <h1>The Sock Exchange</h1>
+      <h1>The Sock Exchange!</h1>
       <div className="card-container" style={{ display: 'flex', flexWrap: 'wrap', gap: '20px' }}>
         {data.map((sock) => (
           <div key={sock._id} className="card" style={{ flex: '1', minWidth: '300px', maxWidth: '45%' }}>
