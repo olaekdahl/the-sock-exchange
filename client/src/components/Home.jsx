@@ -1,12 +1,3 @@
-/**
- * Renders a component that displays a list of socks fetched from an API.
- *
- * @component
- * @example
- * // Usage
- * <HomePager />
- */
-
 import React, { useState, useEffect } from 'react';
 import imagePlaceHolder from '../assets/images/sock_placeholder.png';
 import DocumentCount from './DocumentCount';
