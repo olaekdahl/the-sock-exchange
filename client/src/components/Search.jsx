@@ -30,10 +30,11 @@ const Search = ({ onHandleSetData }) => {
   const handleChange = (e) => {
     setSearchTerm(e.target.value);
   };
-
+  
   return (
     <form className="d-flex" role="search" onSubmit={handleSubmit}>
       <input
+        id="search"
         className="form-control me-2"
         type="search"
         placeholder="Color"
