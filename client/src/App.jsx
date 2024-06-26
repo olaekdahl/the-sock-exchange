@@ -7,8 +7,8 @@ import {
   Outlet,
 } from "react-router-dom";
 import About from "./components/About";
-import Upload from "./components/Upload";
-import HomePager from "./components/HomePager";
+import Add from "./components/Add";
+import Home from "./components/Home";
 import Search from "./components/Search";
 import "bootstrap/dist/css/bootstrap.min.css";
 import "bootstrap/dist/js/bootstrap.js"
@@ -64,9 +64,9 @@ function App() {
       <main role="main" className="col-md-9 ml-sm-auto col-lg-10 px-md-4">
         <Routes>
           {/* <Route exact path="/" element={<Home />} /> */}
-          <Route exact path="/" element={<HomePager onHandleSetData={handleSetData} data={data} />} />
+          <Route exact path="/" element={<Home onHandleSetData={handleSetData} data={data} />} />
           <Route path="/about" element={<About />} />
-          <Route path="/contact" element={<Upload />} />
+          <Route path="/contact" element={<Add />} />
         </Routes>
         <div className="container-fluid">
           <div className="row"></div>
