@@ -25,6 +25,9 @@ WORKDIR /usr/src/app
 # Copy package.json and server.js into the container
 COPY package*.json ./
 COPY server.js .
+COPY middleware/ ./middleware
+COPY routes/ ./routes
+COPY utils/ ./utils
 
 # Install any needed packages specified in package.json
 RUN npm install
