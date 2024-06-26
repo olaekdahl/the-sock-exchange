@@ -78,6 +78,17 @@ app.get('/api/socks/:page/:limit', async (req, res) => {
          * @param {number} limit - The number of records to display on the page.
          * @returns {Promise<Array>} A promise that resolves to an array of socks.
          */
+        if(page > 0) {
+            page = +page;
+        }
+
+        if(limit > 0) {
+            limit = +limit;
+        }
+
+        console.log(page);
+        console.log(limit);
+
         const socks = await collection.find({}).skip((page - 1) * limit).limit(limit).toArray();
         client.close();
         res.json(socks);
@@ -209,6 +220,7 @@ app.get('/api/socks/count', async (_req, res) => {
          */
         const count = await collection.countDocuments();
         client.close();
+        console.log(count);
         res.json({ count });
     } catch (err) {
         console.error('Error:', err);

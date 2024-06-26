@@ -6,7 +6,6 @@ import {
   Link,
   Outlet,
 } from "react-router-dom";
-import Home from "./components/Home";
 import About from "./components/About";
 import Upload from "./components/Upload";
 import HomePager from "./components/HomePager";
