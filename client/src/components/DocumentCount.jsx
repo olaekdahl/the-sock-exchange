@@ -1,18 +1,10 @@
-import React, { useState, useEffect } from 'react';
+import React from 'react';
 
-const DocumentCount = ({ input }) => {
-    const [count, setCount] = useState(0);
-
-    useEffect(() => {
-        fetch(`${import.meta.env.VITE_SOCKS_API_URL}/count`)
-            .then(response => response.json())
-            .then(data => setCount(data.count))
-            .catch(error => console.error(error));
-    }, [input]);
+const DocumentCount = ({ itemCount }) => {
 
     return (
         <div>
-            <strong>Total Document Count: {count}</strong>
+            <strong>Total Document Count: {itemCount}</strong>
         </div>
     );
 };
