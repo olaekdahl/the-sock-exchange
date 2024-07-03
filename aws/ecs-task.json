@@ -20,7 +20,7 @@
                 ],
                 "timeout": 5,
                 "interval": 30,
-                "startPeriod": 120
+                "startPeriod": 300
             },
             "essential": true,
             "environment": [],
