@@ -5,6 +5,7 @@ import { MongoClient } from 'mongodb';
 import Ajv from 'ajv';
 import { registerRoutes } from './routes/register.js';
 import { sockRoutes } from './routes/socks.js';
+import { testRoutes } from './routes/test.js';
 import { errorHandler } from './middleware/errorHandler.js';
 import logger from './utils/logger.js';
 
@@ -28,6 +29,7 @@ app.use(cors());
 
 app.use('/api/register', registerRoutes);
 app.use('/api/socks', sockRoutes);
+app.use('/api/test', testRoutes);
 
 app.use(errorHandler);
 
