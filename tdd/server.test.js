@@ -2,6 +2,7 @@
 const request = require('supertest');
 const express = require('express');
 const MongoClient = require('mongodb').MongoClient;
+const { MongoMemoryServer } = require('mongodb-memory-server');
 let app, mongoServer, db, collection;
 
 beforeAll(async () => {
