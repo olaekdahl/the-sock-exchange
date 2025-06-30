@@ -1,4 +1,4 @@
-import React from "react";
+import PropTypes from "prop-types";
 import { Link } from "react-router-dom";
 import Search from "./Search";
 
@@ -43,6 +43,10 @@ const Navbar = ({ onHandleSetData }) => {
       </div>
     </nav>
   );
+};
+
+Navbar.propTypes = {
+  onHandleSetData: PropTypes.func.isRequired,
 };
 
 export default Navbar;

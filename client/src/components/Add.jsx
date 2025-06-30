@@ -1,23 +1,17 @@
-import React, { useState } from "react";
+import { useState } from "react";
+import { useApi } from "../hooks/useApi";
+import { 
+  SOCK_SIZES, 
+  SOCK_CONDITIONS, 
+  FOOT_OPTIONS, 
+  DEFAULT_SOCK_DATA,
+  API_BASE_URL 
+} from "../constants";
 
-const Upload = () => {
-  const [sockData, setSockData] = useState({
-    userId: "",
-    sockDetails: {
-      size: "Small", // Default set as 'Small'
-      color: "",
-      pattern: "",
-      material: "",
-      condition: "New", // Default set as 'New'
-      forFoot: "Left", // Default set as 'Left'
-    },
-    additionalFeatures: {
-      waterResistant: false,
-      padded: false,
-      antiBacterial: false,
-    },
-    addedTimestamp: "",
-  });
+const Add = () => {
+  const [sockData, setSockData] = useState(DEFAULT_SOCK_DATA);
+  const [message, setMessage] = useState(null);
+  const { loading, error, apiCall, setError } = useApi();
 
   const handleChange = (e) => {
     const { name, value, type, checked } = e.target;
@@ -44,6 +38,17 @@ const Upload = () => {
 
   const handleSubmit = async (e) => {
     e.preventDefault();
+    
+    // Basic validation
+    if (!sockData.userId.trim() || !sockData.sockDetails.color.trim() || 
+        !sockData.sockDetails.material.trim() || !sockData.sockDetails.pattern.trim()) {
+      setError("Please fill in all required fields");
+      return;
+    }
+    
+    setError(null);
+    setMessage(null);
+    
     // Add the current timestamp
     const submission = {
       ...sockData,
@@ -51,33 +56,37 @@ const Upload = () => {
     };
 
     try {
-      const response = await fetch(`${import.meta.env.VITE_SOCKS_API_URL}`, {
+      await apiCall(API_BASE_URL, {
         method: "POST",
-        headers: {
-          "Content-Type": "application/json",
-        },
         body: JSON.stringify(submission),
       });
-
-      if (!response.ok) {
-        throw new Error(`HTTP error! status: ${response.status}`);
-      }
-
-      const data = await response.json();
-      console.log(data);
-      // Handle post submission logic (like showing a success message)
+      
+      setMessage("Sock added successfully!");
+      
+      // Reset form
+      setSockData(DEFAULT_SOCK_DATA);
     } catch (error) {
       console.error("Error posting data", error);
-      // Handle errors here
+      setError("Failed to add sock. Please try again.");
     }
   };
 
   return (
     <div className="row">
       <div className="col-4">
+        {error && (
+          <div className="alert alert-danger" role="alert">
+            {error}
+          </div>
+        )}
+        {message && (
+          <div className="alert alert-success" role="alert">
+            {message}
+          </div>
+        )}
         <form onSubmit={handleSubmit} className="p-3">
           <div className="form-group">
-            <label htmlFor="userId">User ID</label>
+            <label htmlFor="userId">User ID *</label>
             <input
               type="text"
               className="form-control"
@@ -85,7 +94,12 @@ const Upload = () => {
               name="userId"
               value={sockData.userId}
               onChange={handleChange}
+              required
+              aria-describedby="userIdHelp"
             />
+            <small id="userIdHelp" className="form-text text-muted">
+              Enter your unique user identifier
+            </small>
           </div>
           {/* Additional form groups for sock details */}
           <div className="form-group">
@@ -97,14 +111,16 @@ const Upload = () => {
               value={sockData.sockDetails.size}
               onChange={handleChange}
             >
-              <option>Small</option>
-              <option>Medium</option>
-              <option>Large</option>
+              {SOCK_SIZES.map((size) => (
+                <option key={size} value={size}>
+                  {size}
+                </option>
+              ))}
             </select>
           </div>
           {/* Sock Details */}
           <div className="form-group">
-            <label htmlFor="color">Color</label>
+            <label htmlFor="color">Color *</label>
             <input
               type="text"
               className="form-control"
@@ -112,10 +128,11 @@ const Upload = () => {
               name="color"
               value={sockData.sockDetails.color}
               onChange={handleChange}
+              required
             />
           </div>
           <div className="form-group">
-            <label htmlFor="pattern">Pattern</label>
+            <label htmlFor="pattern">Pattern *</label>
             <input
               type="text"
               className="form-control"
@@ -123,10 +140,11 @@ const Upload = () => {
               name="pattern"
               value={sockData.sockDetails.pattern}
               onChange={handleChange}
+              required
             />
           </div>
           <div className="form-group">
-            <label htmlFor="material">Material</label>
+            <label htmlFor="material">Material *</label>
             <input
               type="text"
               className="form-control"
@@ -134,6 +152,7 @@ const Upload = () => {
               name="material"
               value={sockData.sockDetails.material}
               onChange={handleChange}
+              required
             />
           </div>
           <div className="form-group">
@@ -145,8 +164,11 @@ const Upload = () => {
               value={sockData.sockDetails.condition}
               onChange={handleChange}
             >
-              <option>Used</option>
-              <option>New</option>
+              {SOCK_CONDITIONS.map((condition) => (
+                <option key={condition} value={condition}>
+                  {condition}
+                </option>
+              ))}
             </select>
           </div>
           <div className="form-group">
@@ -158,9 +180,11 @@ const Upload = () => {
               value={sockData.sockDetails.forFoot}
               onChange={handleChange}
             >
-              <option>Left</option>
-              <option>Right</option>
-              <option>Both</option>
+              {FOOT_OPTIONS.map((foot) => (
+                <option key={foot} value={foot}>
+                  {foot}
+                </option>
+              ))}
             </select>
           </div>
           {/* Additional Features */}
@@ -205,8 +229,12 @@ const Upload = () => {
               </label>
             </div>
           </div>
-          <button type="submit" className="btn btn-primary">
-            Submit
+          <button 
+            type="submit" 
+            className="btn btn-primary"
+            disabled={loading}
+          >
+            {loading ? "Adding Sock..." : "Submit"}
           </button>
         </form>
       </div>
@@ -214,4 +242,4 @@ const Upload = () => {
   );
 };
 
-export default Upload;
+export default Add;

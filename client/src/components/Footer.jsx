@@ -1,11 +1,11 @@
-import React from "react";
-
 const Footer = () => {
   const envClass = import.meta.env.VITE_REACT_ENV === "dev" ? "bg-yellow" : "bg-green";
+  const environment = import.meta.env.VITE_REACT_ENV || "production";
+  
   return (
     <footer className={envClass}>
       <div>
-        <strong>{import.meta.env.VITE_REACT_ENV.toUpperCase()}</strong>
+        <strong>{environment.toUpperCase()}</strong>
       </div>
     </footer>
   );

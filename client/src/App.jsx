@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import { useState, useCallback } from "react";
 import {
   BrowserRouter as Router,
   Route,
@@ -15,9 +15,10 @@ import "./App.css";
 
 function App() {
   const [data, setData] = useState([]); // Shared state to store the fetched data
-  const handleSetData = (data) => {
-    setData(data);
-  };
+  
+  const handleSetData = useCallback((newData) => {
+    setData(newData);
+  }, []);
 
   return (
     <>

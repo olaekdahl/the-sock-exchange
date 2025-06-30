@@ -1,4 +1,6 @@
-import React, { useState } from "react";
+import { useState } from "react";
+import PropTypes from "prop-types";
+import { API_BASE_URL } from "../constants";
 
 /**
  * Search component for searching socks by color.
@@ -6,25 +8,33 @@ import React, { useState } from "react";
  */
 const Search = ({ onHandleSetData }) => {
   const [searchTerm, setSearchTerm] = useState("");
+  const [loading, setLoading] = useState(false);
 
-  const handleSubmit = (e) => {
+  const handleSubmit = async (e) => {
     e.preventDefault();
-    fetch(`${import.meta.env.VITE_SOCKS_API_URL}/search`, {
-      method: "POST",
-      body: JSON.stringify({ searchTerm }),
-      headers: {
-        "Content-Type": "application/json",
-      },
-    })
-      .then((response) => response.json())
-      .then((data) => {
-        // Handle the response data
-        onHandleSetData(data);
-      })
-      .catch((error) => {
-        // Handle any errors
-        console.error(error);
+    if (!searchTerm.trim()) return;
+    
+    setLoading(true);
+    try {
+      const response = await fetch(`${API_BASE_URL}/search`, {
+        method: "POST",
+        body: JSON.stringify({ searchTerm: searchTerm.trim() }),
+        headers: {
+          "Content-Type": "application/json",
+        },
       });
+      
+      if (!response.ok) {
+        throw new Error("Search failed");
+      }
+      
+      const data = await response.json();
+      onHandleSetData(data);
+    } catch (error) {
+      console.error("Search error:", error);
+    } finally {
+      setLoading(false);
+    }
   };
 
   const handleChange = (e) => {
@@ -42,11 +52,20 @@ const Search = ({ onHandleSetData }) => {
         value={searchTerm}
         onChange={handleChange}
       />
-      <button className="btn btn-outline-success" type="submit">
-        Search
+      <button 
+        className="btn btn-outline-success" 
+        type="submit"
+        disabled={loading || !searchTerm.trim()}
+        aria-label="Search socks by color"
+      >
+        {loading ? "Searching..." : "Search"}
       </button>
     </form>
   );
+};
+
+Search.propTypes = {
+  onHandleSetData: PropTypes.func.isRequired,
 };
 
 export default Search;

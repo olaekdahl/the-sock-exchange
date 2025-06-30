@@ -1,4 +1,4 @@
-import React from 'react';
+import PropTypes from 'prop-types';
 
 const DocumentCount = ({ itemCount }) => {
 
@@ -7,6 +7,10 @@ const DocumentCount = ({ itemCount }) => {
             <strong>Total Document Count: {itemCount}</strong>
         </div>
     );
+};
+
+DocumentCount.propTypes = {
+    itemCount: PropTypes.number.isRequired,
 };
 
 export default DocumentCount;
