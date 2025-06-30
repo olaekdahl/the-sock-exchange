@@ -1,4 +1,3 @@
-import React from 'react';
 import imagePlaceHolder from '../assets/images/sock_placeholder.png';
 
 const Sock = ({ sock, handleDelete }) => {
@@ -21,8 +20,14 @@ const Sock = ({ sock, handleDelete }) => {
                 <div className="card-text">Anti Bacterial: {sock.additionalFeatures.antiBacterial ? 'Yes' : 'No'}</div>
             </div>
             <div className="card-footer" style={{ display: 'flex', justifyContent: 'space-between' }}>
-                <small className="text-muted">Added: {sock.addedTimestamp}</small>
-                <button className="btn btn-sm btn-danger" onClick={() => handleDelete(sock._id)}>Delete</button>
+                <small className="text-muted">Added: {new Date(sock.addedTimestamp).toLocaleDateString()}</small>
+                <button 
+                  className="btn btn-sm btn-danger" 
+                  onClick={() => handleDelete(sock._id)}
+                  aria-label={`Delete sock ${sock._id}`}
+                >
+                  Delete
+                </button>
             </div>
         </div>
     );
