@@ -1,5 +1,4 @@
 import { useState, useEffect, useCallback } from "react";
-import PropTypes from "prop-types";
 import DocumentCount from "./DocumentCount";
 import Sock from "./Sock";
 import Pagination from "./Pagination";
@@ -114,16 +113,6 @@ const Home = ({ onHandleSetData, data }) => {
       )}
     </div>
   );
-};
-
-Home.propTypes = {
-  onHandleSetData: PropTypes.func.isRequired,
-  data: PropTypes.arrayOf(PropTypes.shape({
-    _id: PropTypes.string.isRequired,
-    sockDetails: PropTypes.object.isRequired,
-    additionalFeatures: PropTypes.object.isRequired,
-    addedTimestamp: PropTypes.string.isRequired,
-  })).isRequired,
 };
 
 export default Home;

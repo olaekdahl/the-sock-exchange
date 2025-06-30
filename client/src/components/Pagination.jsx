@@ -1,4 +1,4 @@
-import PropTypes from 'prop-types';
+
 
 const Pagination = ({ totalItems, currentPage, setCurrentPage, itemsPerPage = 10 }) => {
   const totalPages = Math.ceil(totalItems / itemsPerPage);
@@ -55,11 +55,6 @@ const Pagination = ({ totalItems, currentPage, setCurrentPage, itemsPerPage = 10
   );
 };
 
-Pagination.propTypes = {
-  totalItems: PropTypes.number.isRequired,
-  currentPage: PropTypes.number.isRequired,
-  setCurrentPage: PropTypes.func.isRequired,
-  itemsPerPage: PropTypes.number,
-};
+
 
 export default Pagination;

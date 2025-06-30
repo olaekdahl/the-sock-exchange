@@ -1,5 +1,4 @@
 import { useState } from "react";
-import PropTypes from "prop-types";
 import { API_BASE_URL } from "../constants";
 
 /**
@@ -64,8 +63,6 @@ const Search = ({ onHandleSetData }) => {
   );
 };
 
-Search.propTypes = {
-  onHandleSetData: PropTypes.func.isRequired,
-};
+
 
 export default Search;

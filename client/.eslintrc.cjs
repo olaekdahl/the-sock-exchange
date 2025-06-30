@@ -9,10 +9,11 @@ module.exports = {
   ],
   ignorePatterns: ['dist', '.eslintrc.cjs'],
   parserOptions: { ecmaVersion: 'latest', sourceType: 'module' },
-  settings: { react: { version: '18.2' } },
+  settings: { react: { version: '19.1' } },
   plugins: ['react-refresh'],
   rules: {
     'react/jsx-no-target-blank': 'off',
+    'react/prop-types': 'off', // Disabled since we removed PropTypes for React 19
     'react-refresh/only-export-components': [
       'warn',
       { allowConstantExport: true },

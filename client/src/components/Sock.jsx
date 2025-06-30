@@ -1,4 +1,3 @@
-import PropTypes from 'prop-types';
 import imagePlaceHolder from '../assets/images/sock_placeholder.png';
 
 const Sock = ({ sock, handleDelete }) => {
@@ -32,27 +31,6 @@ const Sock = ({ sock, handleDelete }) => {
             </div>
         </div>
     );
-};
-
-Sock.propTypes = {
-  sock: PropTypes.shape({
-    _id: PropTypes.string.isRequired,
-    sockDetails: PropTypes.shape({
-      size: PropTypes.string.isRequired,
-      color: PropTypes.string.isRequired,
-      pattern: PropTypes.string.isRequired,
-      material: PropTypes.string.isRequired,
-      condition: PropTypes.string.isRequired,
-      forFoot: PropTypes.string.isRequired,
-    }).isRequired,
-    additionalFeatures: PropTypes.shape({
-      waterResistant: PropTypes.bool.isRequired,
-      padded: PropTypes.bool.isRequired,
-      antiBacterial: PropTypes.bool.isRequired,
-    }).isRequired,
-    addedTimestamp: PropTypes.string.isRequired,
-  }).isRequired,
-  handleDelete: PropTypes.func.isRequired,
 };
 
 export default Sock;
